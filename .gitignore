@@ -8,3 +8,9 @@ node_modules
 package-lock.json
 yarn.lock
 netlify
+.sass-cache
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
