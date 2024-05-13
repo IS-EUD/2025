@@ -1,0 +1,26 @@
+- type: General
+  people:
+    - name: Albrecht Schmidt
+      affiliation: LMU Munich
+      link: https://www.um.informatik.uni-muenchen.de/personen/professoren/schmidt/index.html
+      image: null
+    - name: Lucio Davide Spano
+      affiliation: University of Cagliari
+      link: https://www.unica.it/unica/page/en/luciod_spano
+      image: null
+- type: Programme
+  people: []
+- type: Demo and Work in Progress
+  people: []
+- type: Workshop
+  people: []
+- type: Doctoral Consortium
+  people: []
+- type: Local
+  people: []
+- type: Web
+  people:
+  - name: Andrea Esposito
+    affiliation: University of Bari Aldo Moro
+    link: https://ivu.di.uniba.it/people/esposito
+    image: https://github.com/espositoandrea.png

@@ -1,0 +1,47 @@
+---
+layout: page
+title: Organizing Committee
+---
+
+<!--==============================
+=            Speakers            =
+===============================-->
+
+<section class="section speakers bg-light">
+    <div class="container">
+        {% for position in site.data.organizers %}
+        <div class="row">
+            <div class="col-12">
+                <!-- Section Title -->
+                <div class="section-title">
+                    <h3>{{ position.type }} <span class="alternate">Chair{% if position.people.size > 1 %}s{% endif %}</span></h3>
+                </div>
+            </div>
+        </div>
+        <div class="row row justify-content-center">
+            {% for person in position.people %}
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <!-- Speaker 1 -->
+                <div class="speaker-item">
+                    <div class="image">
+                        <img src="{{ person.image | default: '/images/empty-avatar.jpeg' | absolute_url }}" alt="speaker" class="img-fluid">
+                    </div>
+                    <div class="content text-center">
+                        <h5>
+                            {% unless person.link == empty %}
+                            <a href="{{ person.link }}" target="_blank" rel="noopener noreferrer">{{ person.name }}</a>
+                            {% else %}
+                            {{ person.name }}
+                            {% endunless %}
+                        </h5>
+                        <p>{{ person.affiliation }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!--====  End of Speakers  ====-->
