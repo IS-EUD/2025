@@ -16,8 +16,8 @@ layout: base
 				<div class="block">
 					<!-- Coundown Timer -->
 					<div class="timer"></div>
-					<h1>IS-EUD 2025</h1>
-					<h2>10th International Symposium on End-User Development</h2>
+					<h1>{{ site.conference.acronym }}</h1>
+					<h2>{{ site.conference.name }}</h2>
 					<h6>DD-DD Month YYYY, Munich (Germany)</h6>
 					<!-- Action Button -->
 					<a href="contact.html" class="btn btn-white-md">get ticket now</a>
@@ -29,9 +29,9 @@ layout: base
 	
 <!--====  End of Banner  ====-->
 
-@@include('blocks/about-section.htm')
+{% include about-section.htm %}
 
-@@include('blocks/speakers.htm')
+{% include speakers.htm %}
 
 @@include('blocks/schedule.htm',{
 	"button"	: false
@@ -120,7 +120,7 @@ layout: base
 
 <!--====  End of Registration  ====-->
 
-@@include('blocks/pricing.htm')
+{% include pricing.htm %}
 
 <!--===========================================
 =            Call to Action Ticket            =
@@ -268,8 +268,8 @@ layout: base
 
 <!--====  End of News Posts  ====-->
 
-@@include('blocks/cta-subscribe.htm')
+{% include cta-subscribe.htm %}
 
-@@include('blocks/google-map.htm')
+{% include google-map.htm %}
 
-@@include('blocks/footer.htm')
+{% include footer.htm %}
