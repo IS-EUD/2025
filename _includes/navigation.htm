@@ -14,15 +14,14 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item dropdown active">
-          <a class="nav-link" href="#!" data-toggle="dropdown">Home <i class="fa fa-angle-down"></i>
+          <a class="nav-link" href="{{ site.url | absolute_url }}" data-toggle="dropdown">Home
+            {% comment %}
             <span>/</span>
+            {% endcomment %}
           </a>
           <!-- Dropdown list -->
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="index.html">Homepage</a></li>
-            <li><a class="dropdown-item" href="homepage-two.html">Homepage 2</a></li>
-          </ul>
         </li>
+        {% comment %}
         <li class="nav-item">
           <a class="nav-link" href="speakers.html">Speakers
             <span>/</span>
@@ -80,6 +79,7 @@
         <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact</a>
         </li>
+        {% endcomment %}
       </ul>
     </div>
   </div>
