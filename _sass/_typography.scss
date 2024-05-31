@@ -48,6 +48,13 @@ p, a, li, blockquote, label{
 	margin-bottom: 0;
 }
 
+.dark-bg p, a, li, blockquote, label{
+	font-size: 1rem;
+	line-height: 26px;
+	color: lighten($text-color, 30);
+	margin-bottom: 0;
+}
+
 // Placeholder Color Change
 .form-control::-webkit-input-placeholder { 
     color: darken($light, 30%);

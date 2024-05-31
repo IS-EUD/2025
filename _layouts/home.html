@@ -8,19 +8,22 @@ layout: base
 =            Banner            =
 =============================-->
 
-<section class="banner bg-banner-one overlay">
+<section class="banner bg-banner-one overlay overlay-dark">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
 				<!-- Content Block -->
-				<div class="block">
+				<div class="block dark-bg">
 					<!-- Coundown Timer -->
 					{% comment %}<div class="timer"></div>{% endcomment %}
 					<h1>{{ site.conference.acronym }}</h1>
 					<h2>{{ site.conference.name }}</h2>
-					<h6>DD-DD Month YYYY, Munich (Germany)</h6>
+					<h6>16-18 June 2025, Munich (Germany)</h6>
+					<p class="mb-5 fs-5">Stay tuned for more updates! For more information please contact
+						<a href="mailto:{{ 'albrecht.schmidt@ifi.lmu.de' | encode_email }}">Albrecht Schmidt</a>.
+					</p>
 					<!-- Action Button -->
-					<a href="contact.html" class="btn btn-white-md">get ticket now</a>
+					<a href="{% link iseud25.ics %}" class="btn btn-white-md" download>Save the Date</a>
 				</div>
 			</div>
 		</div>
