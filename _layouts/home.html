@@ -28,6 +28,28 @@ layout: base
 	</div>
 </section>
 	
+<section class="section about">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 align-self-center">
+				<div class="content-block">
+					<h2>Call for <span class="alternate">Papers</span></h2>
+					<div class="description-one">
+							{% capture cfp %}{% include_relative call-for-papers.md %}{% endcapture %}
+							{{ cfp | markdownify | replace: '<p>', '<p class="mb-2">' }}
+					</div>
+					<div class="description-teo">
+						<p class="text-muted">Curious about the last IS-EUD conference? Check out
+						the program and the results from <a target="_blank"
+						rel="noopener noreferrer"
+						href="https://cg3hci.dmi.unica.it/iseud2023/">IS-EUD
+						2023</a>.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 {% comment %}
 <!--====  End of Banner  ====-->
 
