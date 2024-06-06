@@ -24,17 +24,20 @@ title: Organizing Committee
                 <!-- Speaker 1 -->
                 <div class="speaker-item">
                     <div class="image">
-                        <img src="{{ person.image | default: '/images/empty-avatar.jpeg' | absolute_url }}" alt="speaker" class="img-fluid">
+                        <img src="{{ person.image | default: '/images/empty-avatar.jpeg' | absolute_url }}" style="aspect-ratio: 1/1; object-fit: cover;" alt="speaker" class="img-fluid">
                     </div>
                     <div class="content text-center">
                         <h5>
                             {% unless person.link == empty %}
-                            <a href="{{ person.link }}" target="_blank" rel="noopener noreferrer">{{ person.name }}</a>
+                            <a href="{{ person.link }}" class="text-decoration-none" target="_blank" rel="noopener noreferrer">{{ person.name }}</a>
                             {% else %}
                             {{ person.name }}
                             {% endunless %}
                         </h5>
                         <p>{{ person.affiliation }}</p>
+                        <p><a href="mailto:{{ person.email | encode_email }}?subject=[IS-EUD 2025]">
+                            <span class="fas fa-envelope" title="Email {{ person.name }}"></span>
+                        </a></p>
                     </div>
                 </div>
             </div>
