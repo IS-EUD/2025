@@ -67,6 +67,17 @@
     }
 }
 
+.btn-primary-md{
+	background: $primary-color;
+	color: $light;
+    padding: 15px 40px;
+    border-radius: 0;
+    &:hover{
+        background: darken($primary-color, 10);
+        color: $light;
+    }
+}
+
 .btn-white-md{
 	background: $light;
 	color: $black;
