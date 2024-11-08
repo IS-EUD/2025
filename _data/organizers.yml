@@ -21,6 +21,16 @@
       link: https://dei.inf.uc3m.es/abellucci/
       image: https://i1.rgstatic.net/ii/profile.image/272475959328799-1441974739901_Q512/Andrea-Bellucci-3.jpg
       email: abellucc@inf.uc3m.es
+- type: Workshop
+  people:
+    - name: Viktorija Paneva
+      email: viktorija.paneva@ifi.lmu.de
+      affiliation: LMU Munich
+    - name: Daniel Tetteroo
+      affiliation: TU/e Eindhoven University of Technology
+      link: https://www.tue.nl/en/research/researchers/daniel-tetteroo/
+      image: /images/organizers/tetteroo.jpg
+      email: d.tetteroo@tue.nl
 - type: Demos and Work in Progress
   people:
     - name: Vittoria Frau
