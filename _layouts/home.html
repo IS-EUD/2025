@@ -33,12 +33,25 @@ layout: base
 		<div class="row">
 			<div class="col-md-12 align-self-center">
 				<div class="content-block">
-					<h2>Call for <span class="alternate">Papers</span></h2>
-					<div class="description-one">
-							{% capture cfp %}{% include_relative call-for-papers.md %}{% endcapture %}
-							{{ cfp | markdownify | replace: '<p>', '<p class="mb-2">' }}
+					<h2 class="text-center">Welcome to <span class="alternate">IS-EUD 2025</span></h2>
+					<div class="row">
+						<div class="col-lg-6 col-md-6 align-self-center description-one">
+							<p>
+								<strong>End-User Development (EUD)</strong> aims to empower end-users who are not necessarily experts in software development to create their own software to address their specific needs. IS-EUD is a bi-annual event that gathers researchers interested in extending the knowledge about how to design end-user development technologies and provide scientific accounts of phenomena surrounding EUD practices.
+							</p>
+							<p class="mt-2">IS-EUD is a bi-annual event, that gathers researchers interested to extend our knowledge about how to design end-user development technologies and to provide scientific accounts of phenomena surrounding end-user development practices.</p>
+						</div>
+						<div class="col-lg-6 col-md-6">
+							<h3 class="h4">Important <span class="alternate">Dates</span></h3>
+							<ul class="date-list">
+								{% assign sorted_dates = site.data.dates | sort: "date" %}
+								{% for date in sorted_dates %}
+								<li><span class="date">{{ date.date | date: "%-d %B %Y"}}:</span> {{ date.description }}</li>
+								{% endfor %}
+							  </ul>
+						</div>
 					</div>
-					<div class="description-teo">
+					<div class="description-two text-center mt-3">
 						<p class="text-muted">Curious about the last IS-EUD conference? Check out
 						the program and the results from <a target="_blank"
 						rel="noopener noreferrer"

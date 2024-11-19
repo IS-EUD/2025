@@ -33,3 +33,30 @@
 @import "pages/faq.scss";
 
 @import "pages/contact.scss";
+
+h2.text-center::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.date-list {
+    list-style: none;
+    padding-left: 0px;
+
+    li {
+
+        min-height: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eae9ec;
+        place-content: center;
+
+        .date {
+            color: #f57530;
+            font-weight: bold;
+            padding-bottom: 2px;
+            width: 150px;
+            display: inline-block;
+        }
+    }
+}

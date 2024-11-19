@@ -52,6 +52,11 @@
       link: https://web.unica.it/unica/page/it/luciod_spano
       image: https://web.unica.it/unica/protected/341338/0/def/ref/SHD30857/
       email: davide.spano@unica.it
+    - name: Fabio Paternò
+      affiliation: ISTI-CNR
+      link: http://giove.isti.cnr.it/Users/Fabio/index.html
+      image: /images/organizers/paterno.jpg
+      email: fabio.paterno@isti.cnr.it
 - type: Web
   people:
     - name: Andrea Esposito

@@ -1,0 +1,121 @@
+---
+layout: page
+title: IS-EUD 2025 Preliminary Call for Papers
+---
+
+<div class="row">
+    <div class="col-lg-3 col-md-10 summary mx-auto p-relative">
+        <article class="rounded border p-4 shadow sticky-top" style="margin-bottom: 30px; top: 5rem;">
+            <h5>Topics &amp; Tracks</h5>
+            <ul class="date-list">
+                <li><a href="#topics">Topics</a></li>
+                <li><a href="#papers">Regular and Short Papers</a></li>
+                <!-- <li><a href="#workshop">Workshop Proposals</a></li>
+                    <li><a href="#demo">Demonstrations and Work in Progress</a></li>
+                    <li><a href="#dc">Doctoral Consortium</a></li> -->
+            </ul>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="https://equinocs.springernature.com/service/IS-EUD_2023" class="btn btn-main-md">Submit
+                        a
+                        Paper</a>
+                </li>
+            </ul>
+        </article>
+    </div>
+    <div class="col">
+        <article class="mb-5 shadow p-4 rounded border">
+            <h2>Call for Papers</h2>
+            <p><strong>10th International Symposium on End-User Development</strong></p>
+
+            <p><strong>16-18 June 2025, Munich (Germany)</strong></p>
+
+            <p><strong>Website</strong>
+                <a href="https://iseud2025.ubicomp.net/">https://iseud2025.ubicomp.net/</a>
+            </p>
+
+            <p>End-User Development (EUD) aims to empower end-users who are not necessarily experts in software
+                development to create their own software to address their specific needs. IS-EUD is a bi-annual
+                event
+                that gathers researchers interested in extending the knowledge about how to design end-user
+                development
+                technologies and provide scientific accounts of phenomena surrounding EUD practices.</p>
+
+            <h3 id="topics">Topics</h3>
+
+            <p>The conference welcomes contributions on:</p>
+
+            <ul>
+                <li>Simple and efficient environments for EUD</li>
+                <li>GenAI to support EUD</li>
+                <li>No-code/low-code paradigms and visual languages to create software and systems</li>
+                <li>Theoretical concepts and foundations for the EUD field</li>
+                <li>New processes, methods, and techniques for EUD</li>
+                <li>Approaches empowering users to create, modify, and tailor digital artefacts</li>
+                <li>Case studies and design implications on challenges and practices of EUD</li>
+            </ul>
+        </article>
+
+
+        <article class="mb-5 shadow p-4 rounded border">
+            <h3 id="papers">Regular and Short Papers</h3>
+            <div class="post-details">
+                <p>We invite two types of paper submissions:</p>
+                <ul>
+                    <li><strong>Regular papers</strong>, up to 16 pages (not counting references), describing
+                        original
+                        unpublished research making a substantial contribution to the research field</li>
+                    <li><strong>Short papers</strong>, up to 8 pages (not counting references) describing original
+                        unpublished research, making a small but solid contribution to the field</li>
+                </ul>
+                <p>All submissions will be reviewed by the Program Committee. The review process for is
+                    double-blind, thus submissions must be <em>anonymized</em>.</p>
+                <p>Accepted papers (both regular and short) will appear in the archival proceedings of IS-EUD 2025,
+                    published by Springer in the Lecture Notes on Computer Science (LNCS) series, and will be
+                    presented
+                    at the conference.</p>
+                <h4>Submission</h4>
+                <p>The review process for this category is double-blind, thus submissions must be
+                    <em>anonymized</em>.
+                    Papers must be carefully formatted according to the
+                    <a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines"
+                        target="_blank"> Springer LNCS format</a>.
+                </p>
+                <!--
+          <p>Authors may submit and update their submission through the
+            <a href="https://equinocs.springernature.com/service/IS-EUD_2023">EquinOCS online submission system</a>
+            until
+            the submission deadline (two different tracks, for regular and short papers,
+            are available for submission).
+          </p>
+        -->
+
+                <h4>Important dates</h4>
+                <p>Regular and Short papers submission:</p>
+                <ul>
+                    {% assign sorted_dates = site.data.dates | sort: "date" %}
+                    {% for date in sorted_dates %}
+                    {% if date.description contains "Regular and short papers " %}
+                    <li>
+                        {{ date.description | remove_first: 'Regular and short papers ' | capitalize }}:
+                        {% if date.extension %}
+                        <span>{{ date.date | date: "%-d %B %Y"}}</span>
+                        {% else %}
+                        <span class="text-decoration-line-through">{{ date.date | date: "%-d %B %Y"}}</span>
+                        <span>{{ date.extension | date: "%-d %B %Y"}}</span>
+                        {% endif %}
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="https://equinocs.springernature.com/service/IS-EUD_2023" class="btn btn-main-md">Submit
+                            a Paper</a>
+                    </li>
+                </ul>
+                <a href="#top">Go to top</a>
+            </div>
+        </article>
+    </div>
+</div>

@@ -1,27 +1,7 @@
 ---
-layout: base
+layout: basic-page
 ---
 
-<!--================================
-=            Page Title            =
-=================================-->
-
-<section class="page-title bg-title overlay-dark">
-	<div class="container">
-		<div class="row">
-			<div class="col-12 text-center">
-				<div class="title">
-					<h3>{{ page.title }}</h3>
-				</div>
-				<ol class="breadcrumb justify-content-center p-0 m-0">
-				  <li class="breadcrumb-item"><a href="{{ site.url | absolute_url }}">Home</a></li>
-				  <li class="breadcrumb-item active">{{ page.title }}</li>
-				</ol>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!--====  End of Page Title  ====-->
-
-{{ content }}
+<div class="container py-5">
+    {{ content }}
+</div>

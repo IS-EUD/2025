@@ -2,54 +2,64 @@
 =            Footer            =
 =============================-->
 
-{% comment %}
-<footer class="footer-main">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block text-center">
-          <div class="footer-logo">
-            <img src="images/footer-logo.png" alt="logo" class="img-fluid">
-          </div>
-          <ul class="social-links-footer list-inline">
-            <li class="list-inline-item">
-              <a href="https://themefisher.com/"><i class="fa fa-facebook"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://themefisher.com/"><i class="fa fa-twitter"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://themefisher.com/"><i class="fa fa-instagram"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://themefisher.com/"><i class="fa fa-rss"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://themefisher.com/"><i class="fa fa-vimeo"></i></a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</footer>
-{% endcomment %}
-<!-- Subfooter -->
-<footer class="subfooter">
-  <div class="container">
-    <div class="row justify-content-md-center">
-      <div class="col-md-6 align-self-center text-center">
-        <div class="copyright-text">
-          <p><a href="index.html">IS-EUD 2025</a> &copy; 2024, Developed by Andrea Esposito</p>
-          <p class="small">Design based on <a style="font-size: inherit;" href="https://themefisher.com/products/eventre-bootstrap" target="_blank">Eventre</a> by <a href="https://themefisher.com/" target="_blank" style="font-size: inherit;">Themefisher</a></p>
-        </div>
-      </div>
-      {% comment %}
-      <div class="col-md-6">
-        <a href="#" class="to-top"><i class="fa fa-angle-up"></i></a>
-      </div>
-      {% endcomment %}
-    </div>
-  </div>
+<footer class="footer-main pb-0">
+	<div class="container">
+		<div class="row">
+			<div class="offset-9 col-3">
+				<a href="https://link.springer.com/conference/iseud" target="_blank" rel="noopener noreferrer">
+					<img src="{% link images/lncs.png %}" alt="Lecture Notes in Computer Science Logo"
+						class="img-fluid">
+				</a>
+			</div>
+			{% comment %}
+			<div class="col-md-12">
+				<div class="block text-center">
+					<div class="footer-logo">
+						<img src="{% link images/lncs.png %}" alt="Lecture Notes in Computer Science Logo"
+							class="img-fluid">
+					</div>
+					<ul class="social-links-footer list-inline">
+						<li class="list-inline-item">
+							<a href="https://themefisher.com/"><i class="fa fa-facebook"></i></a>
+						</li>
+						<li class="list-inline-item">
+							<a href="https://themefisher.com/"><i class="fa fa-twitter"></i></a>
+						</li>
+						<li class="list-inline-item">
+							<a href="https://themefisher.com/"><i class="fa fa-instagram"></i></a>
+						</li>
+						<li class="list-inline-item">
+							<a href="https://themefisher.com/"><i class="fa fa-rss"></i></a>
+						</li>
+						<li class="list-inline-item">
+							<a href="https://themefisher.com/"><i class="fa fa-vimeo"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			{% endcomment %}
+		</div>
+	</div>
+	<!-- Subfooter -->
+	<section class="subfooter mt-5">
+		<div class="container">
+			<div class="row justify-content-md-center">
+				<div class="col-md-6 align-self-center text-center">
+					<div class="copyright-text">
+						<p><a href="index.html">IS-EUD 2025</a> &copy; 2024, Developed by Andrea Esposito</p>
+						<p class="small">Design based on <a style="font-size: inherit;"
+								href="https://themefisher.com/products/eventre-bootstrap" target="_blank">Eventre</a> by
+							<a href="https://themefisher.com/" target="_blank"
+								style="font-size: inherit;">Themefisher</a>
+						</p>
+					</div>
+				</div>
+				{% comment %}
+				<div class="col-md-6">
+					<a href="#" class="to-top"><i class="fa fa-angle-up"></i></a>
+				</div>
+				{% endcomment %}
+			</div>
+		</div>
+	</section>
 </footer>
