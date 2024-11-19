@@ -11,17 +11,15 @@ layout: base
 		<div class="row">
 			<div class="col-lg-12">
 				<!-- Content Block -->
-				<div class="block dark-bg">
+				<div class="block dark-bg text-white">
 					<!-- Coundown Timer -->
 					{% comment %}<div class="timer"></div>{% endcomment %}
 					<h1>{{ site.conference.acronym }}</h1>
 					<h2>{{ site.conference.name }}</h2>
 					<h6>16-18 June 2025, Munich (Germany)</h6>
-					<p class="mb-5 fs-5">Stay tuned for more updates! For more information please contact
-						<a href="mailto:{{ 'albrecht.schmidt@ifi.lmu.de' | encode_email }}?subject=[IS-EUD 2025] " style="text-decoration: underline;">Albrecht Schmidt</a>.
-					</p>
 					<!-- Action Button -->
-					<a href="{% link iseud25.ics %}" class="btn btn-primary-md">Save the Date</a>
+					<a href="{% link call-for-papers.html %}" class="btn btn-primary text-white">Read the Call for Papers</a>
+					<a href="{% link iseud25.ics %}" class="btn btn-lg btn-outline-primary text-primary">Download calendar entry</a>
 				</div>
 			</div>
 		</div>
@@ -52,7 +50,7 @@ layout: base
 						</div>
 					</div>
 					<div class="description-two text-center mt-3">
-						<p class="text-muted">Curious about the last IS-EUD conference? Check out
+						<p>Curious about the last IS-EUD conference? Check out
 						the program and the results from <a target="_blank"
 						rel="noopener noreferrer"
 						href="https://cg3hci.dmi.unica.it/iseud2023/">IS-EUD
