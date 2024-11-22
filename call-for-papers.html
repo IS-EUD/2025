@@ -97,10 +97,10 @@ title: IS-EUD 2025 Preliminary Call for Papers
                     <li>
                         {{ date.description | remove_first: 'Regular and short papers ' | capitalize }}:
                         {% if date.extension %}
-                        <span>{{ date.date | date: "%-d %B %Y"}}</span>
-                        {% else %}
                         <span class="text-decoration-line-through">{{ date.date | date: "%-d %B %Y"}}</span>
                         <span>{{ date.extension | date: "%-d %B %Y"}}</span>
+                        {% else %}
+                        <span>{{ date.date | date: "%-d %B %Y"}}</span>
                         {% endif %}
                     </li>
                     {% endif %}
