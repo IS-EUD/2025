@@ -14,7 +14,7 @@ title: Organizing Committee
             <div class="col-12">
                 <!-- Section Title -->
                 <div class="section-title">
-                    <h3>{{ position.type }} <span class="alternate">Chair{% if position.people.size > 1 %}s{% endif %}</span></h3>
+                    <h3 id="{{ position.type | slugify }}-chairs">{{ position.type }} <span class="alternate">Chair{% if position.people.size > 1 %}s{% endif %}</span></h3>
                 </div>
             </div>
         </div>
