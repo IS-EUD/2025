@@ -57,6 +57,11 @@
       link: http://giove.isti.cnr.it/Users/Fabio/index.html
       image: /images/organizers/paterno.jpg
       email: fabio.paterno@isti.cnr.it
+    - name: Stefan Sauer
+      affiliation: Paderborn University
+      link: http://go.uni-paderborn.de/sts
+      image: /images/organizers/sauer.jpg
+      email: sauer@uni-paderborn.de
 - type: Web
   people:
     - name: Andrea Esposito
