@@ -10,13 +10,14 @@ title: IS-EUD 2025 Preliminary Call for Papers
             <ul class="date-list">
                 <li><a href="#topics">Topics</a></li>
                 <li><a href="#papers">Regular and Short Papers</a></li>
-                <!-- <li><a href="#workshop">Workshop Proposals</a></li>
-                    <li><a href="#demo">Demonstrations and Work in Progress</a></li>
-                    <li><a href="#dc">Doctoral Consortium</a></li> -->
+                <li><a href="#workshop">Workshop Proposals</a></li>
+                <li><a href="#demo">Demonstrations and Work in Progress</a></li>
+                <li><a href="#dc">Doctoral Consortium</a></li>
             </ul>
             <ul class="list-inline">
                 <li class="list-inline-item">
-                    <button href="https://equinocs.springernature.com/service/IS-EUD_2023" class="btn btn-main-md" disabled>Submit a Paper</button>
+                    <button href="https://equinocs.springernature.com/service/IS-EUD_2023" class="btn btn-main-md"
+                        disabled>Submit a Paper</button>
                 </li>
             </ul>
         </article>
@@ -108,7 +109,195 @@ title: IS-EUD 2025 Preliminary Call for Papers
                 </ul>
                 <ul class="list-inline">
                     <li class="list-inline-item">
-                        <button href="https://equinocs.springernature.com/service/IS-EUD_2023" class="btn btn-main-md" disabled>Submit a Paper</button>
+                        <button href="https://equinocs.springernature.com/service/IS-EUD_2023" class="btn btn-main-md"
+                            disabled>Submit a Paper</button>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="mb-5 shadow p-4 rounded border">
+            <h3 id="workshop">Workshop Proposals</h3>
+            <div class="post-details">
+                <p>Workshop proposals are invited (up to 6 pages) aligned to the conference themes. Workshops provide an
+                    informal setting where participants can discuss specific topics in an atmosphere that fosters the
+                    active exchange of ideas.</p>
+                <p>Workshops can be half-day or one day long and will be held on <strong>June 16, 2025</strong>.
+                    Accepted <strong>workshop proposals</strong> will be included in the IS-EUD 2025 Adjunct
+                    Proceedings, which will be submitted to <a href="http://ceur-ws.org/" target="_blank"
+                        rel="noopener noreferrer">CEUR-WS.org</a> for online publication.</p>
+                <h4>Submission</h4>
+                <p>
+                    Workshop proposals (up to 6 pages) must be carefully
+                    formatted using the single-column CEUR template available at
+                    <a href="https://ceur-ws.org/Vol-XXX/CEURART.zip" target="_blank"
+                        rel="noopener noreferrer">https://ceur-ws.org/Vol-XXX/CEURART.zip</a> An Overleaf page for
+                    LaTeX users is also available at
+                    <a href="https://www.overleaf.com/read/gwhxnqcghhdt" target="_blank"
+                        rel="noopener noreferrer">https://www.overleaf.com/read/gwhxnqcghhdt</a>.
+                </p>
+                <h4>Important dates</h4>
+                <p>Workshop proposals:</p>
+                <ul>
+                    {% assign sorted_dates = site.data.dates | sort: "date" %}
+                    {% for date in sorted_dates %}
+                    {% if date.description contains "Workshop proposals" %}
+                    <li>
+                        {{ date.description | remove_first: 'Workshop proposals ' | capitalize }}:
+                        {% if date.extension %}
+                        <span class="text-decoration-line-through">{{ date.date | date: "%-d %B %Y"}}</span>
+                        <span>{{ date.extension | date: "%-d %B %Y"}}</span>
+                        {% else %}
+                        <span>{{ date.date | date: "%-d %B %Y"}}</span>
+                        {% endif %}
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+                <p>Submissions to accepted workshops:</p>
+                <ul>
+                    {% assign sorted_dates = site.data.dates | sort: "date" %}
+                    {% for date in sorted_dates %}
+                    {% if date.description contains "Workshop submission" %}
+                    <li>
+                        {{ date.description | remove_first: 'Workshop submission ' | replace_first: "(general
+                        deadline)", "Submission" | capitalize }}:
+                        {% if date.extension %}
+                        <span class="text-decoration-line-through">{{ date.date | date: "%-d %B %Y"}}</span>
+                        <span>{{ date.extension | date: "%-d %B %Y"}}</span>
+                        {% else %}
+                        <span>{{ date.date | date: "%-d %B %Y"}}</span>
+                        {% endif %}
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <button href="https://equinocs.springernature.com/service/IS-EUD_2023" class="btn btn-main-md"
+                            disabled>Submit a Paper</button>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="mb-5 shadow p-4 rounded border">
+            <h3 id="demo">Demonstrations and Work in Progress</h3>
+            <div class="post-details">
+                <p>A demonstration paper (up to 6 pages) should be structured according to the following:</p>
+                <ul>
+                    <li>Abstract (150 words maximum)</li>
+                    <li>Topics to be covered and their relevance to the EUD community</li>
+                    <li>Detailed description of the planned demonstration activity</li>
+                    <li>Diagrams or screenshots (if relevant)</li>
+                    <li>Supporting documentation (e.g., project website, if relevant)</li>
+                    <li>References</li>
+                </ul>
+                <p>Work-in-progress submissions (up to 6 pages) are intended to present preliminary results or tentative
+                    findings and position papers. The authors of accepted contributions will have the opportunity to
+                    give an oral presentation during the conference.</p>
+                <p>Accepted demonstration and work-in-progress papers will be included in the IS-EUD 2025 Adjunct
+                    Proceedings, which will be submitted to <a href="https://ceur-ws.org/" target="_blank"
+                        rel="noopener noreferrer">CEUR-WS.org</a> for online publication.</p>
+                <h4>Submission</h4>
+                <p>
+                    Demonstration and work-in-progress papers (up to 6 pages) must be carefully
+                    formatted using the single-column CEUR template available at
+                    <a href="https://ceur-ws.org/Vol-XXX/CEURART.zip" target="_blank"
+                        rel="noopener noreferrer">https://ceur-ws.org/Vol-XXX/CEURART.zip</a> An Overleaf page for
+                    LaTeX users is also available at
+                    <a href="https://www.overleaf.com/read/gwhxnqcghhdt" target="_blank"
+                        rel="noopener noreferrer">https://www.overleaf.com/read/gwhxnqcghhdt</a>.
+                </p>
+                <h4>Important dates</h4>
+                <p>Demos and work-in-progress submissions:</p>
+                <ul>
+                    {% assign sorted_dates = site.data.dates | sort: "date" %}
+                    {% for date in sorted_dates %}
+                    {% if date.description contains "Demo, WiP, and Doctoral Consortium" %}
+                    <li>
+                        {{ date.description | remove_first: 'Demo, WiP, and Doctoral Consortium ' | capitalize }}:
+                        {% if date.extension %}
+                        <span class="text-decoration-line-through">{{ date.date | date: "%-d %B %Y"}}</span>
+                        <span>{{ date.extension | date: "%-d %B %Y"}}</span>
+                        {% else %}
+                        <span>{{ date.date | date: "%-d %B %Y"}}</span>
+                        {% endif %}
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <button href="https://equinocs.springernature.com/service/IS-EUD_2023" class="btn btn-main-md"
+                            disabled>Submit a Paper</button>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="mb-5 shadow p-4 rounded border">
+            <h3 id="dc">Doctoral Consortium</h3>
+            <div class="post-details">
+                <p>The IS-EUD Doctoral Consortium is intended to bring together PhD students working on the theory and
+                    application of EUD. We particularly encourage students who are about halfway through their doctoral
+                    research to submit doctoral consortium contributions (max 6 pages) describing the topic of their
+                    PhD, their approach, and a summary of their progress.</p>
+                <p>Accepted demonstration and work-in-progress papers will be included in the IS-EUD 2025 Adjunct
+                    Proceedings, which will be submitted to <a href="https://ceur-ws.org/" target="_blank"
+                        rel="noopener noreferrer">CEUR-WS.org</a> for online publication.</p>
+                <h4>Submission</h4>
+                <p>
+                    Doctoral consortium papers must be single-author, but the
+                    supervisor's name could be mentioned within the paper.
+                    Papers must be max 6-page long (excluding references), using
+                    the single-column CEUR template available at
+                    <a href="https://ceur-ws.org/Vol-XXX/CEURART.zip" target="_blank"
+                        rel="noopener noreferrer">https://ceur-ws.org/Vol-XXX/CEURART.zip</a> An Overleaf page for
+                    LaTeX users is also available at
+                    <a href="https://www.overleaf.com/read/gwhxnqcghhdt" target="_blank"
+                        rel="noopener noreferrer">https://www.overleaf.com/read/gwhxnqcghhdt</a>.
+                </p>
+                <h4>Important dates</h4>
+                <p>Doctoral Consortium submissions:</p>
+                <ul>
+                    {% assign sorted_dates = site.data.dates | sort: "date" %}
+                    {% for date in sorted_dates %}
+                    {% if date.description contains "Demo, WiP, and Doctoral Consortium" %}
+                    <li>
+                        {{ date.description | remove_first: 'Demo, WiP, and Doctoral Consortium ' | capitalize }}:
+                        {% if date.extension %}
+                        <span class="text-decoration-line-through">{{ date.date | date: "%-d %B %Y"}}</span>
+                        <span>{{ date.extension | date: "%-d %B %Y"}}</span>
+                        {% else %}
+                        <span>{{ date.date | date: "%-d %B %Y"}}</span>
+                        {% endif %}
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+                <p>Submissions to accepted workshops:</p>
+                <ul>
+                    {% assign sorted_dates = site.data.dates | sort: "date" %}
+                    {% for date in sorted_dates %}
+                    {% if date.description contains "Workshop submission" %}
+                    <li>
+                        {{ date.description | remove_first: 'Workshop submission ' | replace_first: "(general
+                        deadline)", "Submission" | capitalize }}:
+                        {% if date.extension %}
+                        <span class="text-decoration-line-through">{{ date.date | date: "%-d %B %Y"}}</span>
+                        <span>{{ date.extension | date: "%-d %B %Y"}}</span>
+                        {% else %}
+                        <span>{{ date.date | date: "%-d %B %Y"}}</span>
+                        {% endif %}
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <button href="https://equinocs.springernature.com/service/IS-EUD_2023" class="btn btn-main-md"
+                            disabled>Submit a Paper</button>
                     </li>
                 </ul>
             </div>
