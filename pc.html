@@ -5,16 +5,29 @@ title: Program Committee
 
 <div class="row justify-content-center">
     <div class="col col-md-9">
-        <article class="mb-5 shadow p-4 rounded border ">
+        <article class="mb-5 shadow p-4 rounded border table-responsive">
             <!-- <h3 id="program-committee">Program Committee</h3> -->
-            <ul>
-                {% for member in site.data.program-committee %}
-                <li>
-                    {{ member.name }} <strong>{{ member.surname }}</strong>,
-                    <em>{{ member.affiliation }}</em> ({{ member.country }})
-                </li>
-                {% endfor %}
-            </ul>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Affiliation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% assign sorted_pc = site.data.program-committee | sort: 'surname' %}
+                    {% for member in sorted_pc %}
+                    <tr>
+                        <td>
+                        {{ member.name }} <strong>{{ member.surname }}</strong>
+                        </td>
+                        <td>
+                        <em>{{ member.affiliation }}</em> ({{ member.country }})
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
         </article>
     </div>
 </div>
