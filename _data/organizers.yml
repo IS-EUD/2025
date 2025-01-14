@@ -62,6 +62,12 @@
       link: http://go.uni-paderborn.de/sts
       image: /images/organizers/sauer.jpg
       email: sauer@uni-paderborn.de
+- type: Proceedings
+  people:
+    - name: Marco Manca
+      affiliation: ISTI-CNR
+      link: https://www.isti.cnr.it/en/about/people-detail/212/Marco_Manca
+      email: marco.manca@isti.cnr.it
 - type: Web
   people:
     - name: Andrea Esposito
