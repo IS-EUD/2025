@@ -12,7 +12,7 @@
       <span class="fa fa-bars"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav mx-auto">
         <li class="nav-item {% if page.path == 'index.markdown' %}active{% endif %}">
           <a class="nav-link" href="{{ site.url | absolute_url }}">Home
             <span>/</span>
@@ -25,9 +25,14 @@
           </a>
           <!-- Dropdown list -->
         </li>
-        <li class="nav-item {% if page.path == 'organizers.html' %}active{% endif %}">
-          <a class="nav-link" href="{% link organizers.html %}">Organizers
+        <li class="nav-item dropdown {% if page.path == 'organizers.html' %}active{% endif %}">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Committees
           </a>
+          <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="{% link organizers.html %}">Organizing Committee</a></li>
+            <li><a class="dropdown-item" href="{% link pc.html %}">Program Committee</a></li>
+          </ul>
         </li>
       </ul>
     </div>

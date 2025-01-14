@@ -1,0 +1,20 @@
+---
+layout: page
+title: Program Committee
+---
+
+<div class="row justify-content-center">
+    <div class="col col-md-9">
+        <article class="mb-5 shadow p-4 rounded border ">
+            <!-- <h3 id="program-committee">Program Committee</h3> -->
+            <ul>
+                {% for member in site.data.program-committee %}
+                <li>
+                    {{ member.name }} <strong>{{ member.surname }}</strong>,
+                    <em>{{ member.affiliation }}</em> ({{ member.country }})
+                </li>
+                {% endfor %}
+            </ul>
+        </article>
+    </div>
+</div>
