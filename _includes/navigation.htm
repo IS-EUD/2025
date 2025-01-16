@@ -15,13 +15,11 @@
       <ul class="navbar-nav mx-auto">
         <li class="nav-item {% if page.path == 'index.markdown' %}active{% endif %}">
           <a class="nav-link" href="{{ site.url | absolute_url }}">Home
-            <span>/</span>
           </a>
           <!-- Dropdown list -->
         </li>
         <li class="nav-item {% if page.path == 'call-for-papers.html' %}active{% endif %}">
           <a class="nav-link" href="{% link call-for-papers.html %}">Call for Papers
-            <span>/</span>
           </a>
           <!-- Dropdown list -->
         </li>
@@ -33,6 +31,12 @@
           <li><a class="dropdown-item" href="{% link organizers.html %}">Organizing Committee</a></li>
             <li><a class="dropdown-item" href="{% link pc.html %}">Program Committee</a></li>
           </ul>
+        </li>
+        <li class="nav-item {% if page.path == 'index.markdown' %}active{% endif %}">
+          <a class="nav-link" href="https://iseud.net/index.php?page=previous-events" target="_blank" rel="noopener noreferrer">
+            Past Events
+          </a>
+          <!-- Dropdown list -->
         </li>
       </ul>
     </div>
