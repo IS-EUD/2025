@@ -69,6 +69,13 @@
       link: https://www.isti.cnr.it/en/about/people-detail/212/Marco_Manca
       image: /images/organizers/manca.jpg
       email: marco.manca@isti.cnr.it
+- type: Publicity
+  people:
+    - name: Evropi Stefanidi
+      affiliation: TU Wien
+      link: https://igw.tuwien.ac.at/people/evropi-stefanidi/
+      image: /images/organizers/stefanidi.jpg
+      email: evropi.stefanidi@tuwien.ac.at
 - type: Web
   people:
     - name: Andrea Esposito
