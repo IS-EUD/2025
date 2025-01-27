@@ -18,14 +18,16 @@ layout: base
 					<h2>{{ site.conference.name }}</h2>
 					<h6>16-18 June 2025, Munich (Germany)</h6>
 					<!-- Action Button -->
-					<a href="{% link call-for-papers.html %}" class="btn btn-primary text-white">Read the Call for Papers</a>
-					<a href="{% link iseud25.ics %}" class="btn btn-lg btn-outline-primary text-primary">Download calendar entry</a>
+					<a href="{% link call-for-papers.html %}" class="btn btn-primary text-white">Read the Call for
+						Papers</a>
+					<a href="{% link iseud25.ics %}" class="btn btn-lg btn-outline-primary text-primary">Download
+						calendar entry</a>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-	
+
 <section class="section about">
 	<div class="container">
 		<div class="row">
@@ -35,26 +37,32 @@ layout: base
 					<div class="row">
 						<div class="col-lg-6 col-md-6 align-self-center description-one">
 							<p>
-								<strong>End-User Development (EUD)</strong> aims to empower end-users who are not necessarily experts in software development to create their own software to address their specific needs. IS-EUD is a bi-annual event that gathers researchers interested in extending the knowledge about how to design end-user development technologies and provide scientific accounts of phenomena surrounding EUD practices.
+								<strong>End-User Development (EUD)</strong> aims to empower end-users who are not
+								necessarily experts in software development to create their own software to address
+								their specific needs. IS-EUD is a bi-annual event that gathers researchers interested in
+								extending the knowledge about how to design end-user development technologies and
+								provide scientific accounts of phenomena surrounding EUD practices.
 							</p>
-							<p class="mt-2">IS-EUD is a bi-annual event, that gathers researchers interested to extend our knowledge about how to design end-user development technologies and to provide scientific accounts of phenomena surrounding end-user development practices.</p>
+							<p class="mt-2">IS-EUD is a bi-annual event, that gathers researchers interested to extend
+								our knowledge about how to design end-user development technologies and to provide
+								scientific accounts of phenomena surrounding end-user development practices.</p>
 						</div>
 						<div class="col-lg-6 col-md-6">
 							<h3 class="h4">Important <span class="alternate">Dates</span></h3>
 							<ul class="date-list">
 								{% assign sorted_dates = site.data.dates | sort: "date" %}
 								{% for date in sorted_dates %}
-								<li><span class="date">{{ date.date | date: "%-d %B %Y"}}:</span> {{ date.description }}</li>
+								<li><span class="date">{{ date.date | date: "%-d %B %Y"}}:</span> {{ date.description }}
+								</li>
 								{% endfor %}
-							  </ul>
+							</ul>
 						</div>
 					</div>
 					<div class="description-two text-center mt-3 bg-white">
 						<p>Curious about the last IS-EUD conference? Check out
-						the program and the results from <a target="_blank"
-						rel="noopener noreferrer"
-						href="https://cg3hci.dmi.unica.it/iseud2023/">IS-EUD
-						2023</a>.</p>
+							the program and the results from <a target="_blank" rel="noopener noreferrer"
+								href="https://cg3hci.dmi.unica.it/iseud2023/">IS-EUD
+								2023</a>.</p>
 					</div>
 				</div>
 			</div>
@@ -62,33 +70,64 @@ layout: base
 	</div>
 </section>
 
+<section class="about">
+	<!-- Get ticket info -->
+	<div class="content-block">
+		<h2 class="text-center">Follow <span class="alternate">Us!</span></h2>
+		<div class="block text-center">
+			<ul class="social-links-footer list-inline">
+				<li class="list-inline-item">
+					<a href="https://www.facebook.com/profile.php?id=61572181328178" target="_blank">
+						<i class="fa-brands fa-facebook fa-2xl"></i>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a href="https://x.com/IS_EUD_Conf" target="_blank">
+						<i class="fa-brands fa-x-twitter fa-2xl"></i>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a href="https://bsky.app/profile/is-eud-conf.bsky.social" target="_blank">
+						<i class="fa-brands fa-bluesky fa-2xl"></i>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a href="https://www.linkedin.com/company/106051278/" target="_blank">
+						<i class="fa-brands fa-linkedin fa-2xl"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
 <section class="banner bg-banner-two overlay" style="background: url({% link images/venue/garden.jpg %});">
 	<div class="container">
-	  <div class="row">
-		<div class="col-lg-6 md-6">
-  
-  
-		</div>
-  
-		<div class="col-lg-6 md-6 z-1">
-		  <article class="bg-white overlay-content">
-			<div class="post-content bg-white p-4">
-			  <h2><span class="alternate">Venue</span></h2>
-            <p>The venue is in the center of <strong>Munich</strong> at 10 minutes walk from München
-            Hbf (the main railway station) at Mathildenstraße 4, 80336 München
-            (<a href="https://ehv-muenchen.de/veranstaltungszentrum/"
-            target="_blank">https://ehv-muenchen.de/veranstaltungszentrum/</a>)
-            </p>
-			  <p>
-				<a href="{% link venue.html %}" class="btn btn-main-md">More</a>
-			  </p>
+		<div class="row">
+			<div class="col-lg-6 md-6">
+
+
 			</div>
-  
-		  </article>
+
+			<div class="col-lg-6 md-6 z-1">
+				<article class="bg-white overlay-content">
+					<div class="post-content bg-white p-4">
+						<h2><span class="alternate">Venue</span></h2>
+						<p>The venue is in the center of <strong>Munich</strong> at 10 minutes walk from München
+							Hbf (the main railway station) at Mathildenstraße 4, 80336 München
+							(<a href="https://ehv-muenchen.de/veranstaltungszentrum/"
+								target="_blank">https://ehv-muenchen.de/veranstaltungszentrum/</a>)
+						</p>
+						<p>
+							<a href="{% link venue.html %}" class="btn btn-main-md">More</a>
+						</p>
+					</div>
+
+				</article>
+			</div>
 		</div>
-	  </div>
 	</div>
-  </section>
+</section>
 
 {% comment %}
 <!--====  End of Banner  ====-->
@@ -98,7 +137,7 @@ layout: base
 {% include speakers.htm %}
 
 @@include('blocks/schedule.htm',{
-	"button"	: false
+"button" : false
 })
 
 <!--==================================
@@ -162,13 +201,13 @@ layout: base
 							<div class="col-md-6">
 								<div class="form-group">
 									<select class="form-control main" id="select-ticket" required>
-								      <option>Ticket Type</option>
-								      <option>1</option>
-								      <option>2</option>
-								      <option>3</option>
-								      <option>4</option>
-								      <option>5</option>
-								    </select>
+										<option>Ticket Type</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
 								</div>
 							</div>
 							<div class="col-12">
@@ -209,7 +248,7 @@ layout: base
 <!--====  End of Call to Action Ticket  ====-->
 
 @@include('blocks/sponsors.htm',{
-	"background" : true
+"background" : true
 })
 
 <!--================================
@@ -222,7 +261,8 @@ layout: base
 			<div class="col-12">
 				<div class="section-title">
 					<h3>Eventre <span class="alternate">News</span></h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor incididunt ut labore dolore</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor incididunt ut labore
+						dolore</p>
 				</div>
 			</div>
 		</div>
