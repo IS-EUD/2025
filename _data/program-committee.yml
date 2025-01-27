@@ -163,3 +163,23 @@
   email: barbara.barricelli@unibs.it
   name: Barbara Rita
   surname: Barricelli
+- affiliation: University of Hagen
+  country: Germany
+  email: thomas.ludwig@fernuni-hagen.de
+  name: Thomas
+  surname: Ludwig
+- affiliation: University of Bari Aldo Moro
+  country: Italy
+  email: giuseppe.desolda@uniba.it
+  name: Giuseppe
+  surname: Desolda
+- name: Teresa
+  affiliation: Universidad Carlos III de Madrid
+  country: Spain
+  email: tonorati@inf.uc3m.es
+  surname: Onorati
+- name: Nico
+  surname: Ritschel
+  email: ritschel@illinois.edu
+  country: USA
+  affiliation: University of Illinois
