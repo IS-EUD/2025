@@ -9,8 +9,10 @@
 # Workshop Proposals:
 - date: 2025-02-07
   description: Workshop proposals submission
+  extension: 2025-02-14
 - date: 2025-02-14
   description: Workshop proposals notification
+  extension: 2025-02-21
 - date: 2025-02-28
   description: Workshop proposals call publication
 

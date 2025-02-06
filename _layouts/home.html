@@ -52,7 +52,19 @@ layout: base
 							<ul class="date-list">
 								{% assign sorted_dates = site.data.dates | sort: "date" %}
 								{% for date in sorted_dates %}
-								<li><span class="date">{{ date.date | date: "%-d %B %Y"}}:</span> {{ date.description }}
+								<li>
+									<span class="date">
+										{% if date.extension %}
+										<del class="small">{{ date.date | date: "%-d %B %Y"}}</del><br>
+										<span>{{ date.extension | date: "%-d %B %Y"}}</span>:
+										{% else %}
+										<span>{{ date.date | date: "%-d %B %Y"}}</span>:
+										{% endif %}
+									</span>
+									{{ date.description }}
+										{% if date.extension %}
+										<span class="ms-2 badge text-bg-primary text-white">Extended!</span>
+										{% endif %}
 								</li>
 								{% endfor %}
 							</ul>
