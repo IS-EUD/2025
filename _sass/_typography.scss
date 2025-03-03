@@ -42,14 +42,14 @@ h6{
 	font-size: 1.25rem; //20px
 }
 // Others 
-p, a, li, blockquote, label{
+p, a, li, blockquote, label, .text-color-default, dl {
 	font-size: 1rem;
 	line-height: 26px;
 	color: $text-color;
 }
 
 .dark-bg {
-	p, a, li, blockquote, label{
+	p, a, li, blockquote, label, .text-color-default, dl {
 		font-size: 1rem;
 		line-height: 26px;
 		color: lighten($text-color, 30);
