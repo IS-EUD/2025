@@ -188,3 +188,15 @@
   country: France
   affiliation: Université Côte d'Azur
   email: Marco.Winckler@inria.fr
+- name: Marcos
+  surname: Baez
+  country: Germany
+  affiliation: Fachhochschule Bielefeld
+- name: Francesco
+  surname: Greco
+  country: Italy
+  affiliation: University of Bari
+- name: Andrea
+  surname: Esposito
+  country: Italy
+  affiliation: University of Bari
