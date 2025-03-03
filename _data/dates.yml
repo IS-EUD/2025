@@ -4,8 +4,10 @@
   extension: 2025-03-14
 - date: 2025-03-21
   description: Regular and short papers notification
+  extension: 2025-04-04
 - date: 2025-04-04
   description: Regular and short papers camera-ready
+  extension: 2025-04-16
 
 # Workshop Proposals:
 - date: 2025-02-07
