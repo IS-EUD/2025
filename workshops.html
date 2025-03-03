@@ -26,6 +26,16 @@ title: IS-EUD 2025 Accepted Workshops
         <article class="mb-5 shadow p-4 rounded border">
             <h2 id="{{ workshop.acronym | slugify }}">{{ workshop.acronym }}</h2>
             <p class="lead">{{ workshop.title }}</p>
+            <dl class="row">
+                <dt class="col-sm-2">Website</dt>
+                <dd class="col">
+                    <a href="{{ workshop.url }}" target="_blank" rel="noopener noreferrer">{{ workshop.url }}</a>
+                </dd>
+                {% comment %}
+                <dt class="col-sm-3">Duration</dt>
+                <dd class="col-sm-9">{{ workshop.duration }}</dd>
+                {% endcomment %}
+            </dl>
             <h3 class="h5" id="{{ workshop.acronym | slugify }}-abstract">Abstract</h3>
             <p>{{ workshop.abstract }}</p>
             <h3 class="h5" id="{{ workshop.acronym | slugify }}-organizers">Organizers</h3>
