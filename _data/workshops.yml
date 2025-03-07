@@ -1,4 +1,4 @@
-- acronym: A²ID
+- acronym: A²ID 2025
   title: "1st International Workshop on Augmented Artificial Intelligence: a Symbiotic Approach to Enhance Decision-Making"
   url: https://a2id.di.uniba.it
   organizers:
@@ -96,3 +96,26 @@
     will engage in interactive sessions to identify and discuss strategies for
     fostering evolution, adaptability, and educational innovation within
     cultures of participation.
+- acronym: AI4EUD 2025
+  title: Empowering the End-User — Software Development with LLMs
+  url: https://www.hcilab.org/ai4eud-2025/
+  organizers:
+  - name: Thomas Weber
+    affiliation: LMU Munich
+  - name: Passant Elagroudy
+    affiliation: German Research Center for Artificial Intelligence (DFKI)
+  - name: Philippe Palanque
+    affiliation: ICS-IRIT, Université Paul Sabatier - Toulouse III
+  - name: Sven Mayer
+    affiliation: LMU Munich
+  abstract: >-
+    This workshop brings together researchers and practitioners in EUD,
+    AI-assisted development, and Human-Computer interaction to explore how we
+    can utilize GenAI to give end-user developers tools that maintain the
+    expressiveness of modern programming languages, are accessible and
+    approachable but also allow end users to create high-quality, reliable
+    software without requiring extensive software engineering expertise.
+    Through the contributions of the workshop participants and hands-on
+    exploration of different paradigms and presentations, we will assess the
+    status quo and chart a path forward toward an accessible, natural way to
+    create software.
