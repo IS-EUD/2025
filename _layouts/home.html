@@ -65,10 +65,10 @@ layout: base
 										{% endif %}
 									</span>
 									{{ date.description }}
-										{% if date.extension %}
-										<span class="ms-2 badge text-bg-primary text-white {% if today_date > deadline %}text-decoration-line-through{% endif %}">Extended!</span>
+									{% if today_date > deadline %}</del>{% endif %}
+										{% if date.extension or today_date > deadline %}
+										<span class="ms-2 badge text-white {% if today_date > deadline %}text-bg-secondary{% else %}text-bg-primary{% endif %}">{% if today_date > deadline %}Passed{% else %}Extended!{% endif %}</span>
 										{% endif %}
-								{% if today_date > deadline %}</del>{% endif %}
 								</li>
 								{% endfor %}
 							</ul>
