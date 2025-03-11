@@ -3,25 +3,28 @@ layout: page
 title: IS-EUD 2025 Accepted Workshops
 ---
 
+{% assign sorted_workshops = site.data.workshops | sort: 'acronym' %}
+
 <div class="row">
     <div class="col-lg-3 col-md-10 summary mx-auto p-relative">
         <article class="rounded border p-4 shadow sticky-top" style="margin-bottom: 30px; top: 5rem;">
             <h5>Topics &amp; Tracks</h5>
             <ul class="date-list">
-                {% for workshop in site.data.workshops %}
+                {% for workshop in sorted_workshops %}
                 <li><a href="#{{ workshop.acronym | slugify }}">{{ workshop.acronym }}</a></li>
                 {% endfor %}
             </ul>
+	    <!--
             <ul class="list-inline">
                 <li class="list-inline-item">
                     <a href="https://equinocs.springernature.com/service/IS-EUD_2025" class="btn btn-main-md"
                         target="_blank">Submit a Paper</a>
                 </li>
             </ul>
+	    -->
         </article>
     </div>
     <div class="col">
-        {% assign sorted_workshops = site.data.workshops | sort: 'acronym' %}
         {% for workshop in sorted_workshops %}
         <article class="mb-5 shadow p-4 rounded border">
             <h2 id="{{ workshop.acronym | slugify }}">{{ workshop.acronym }}</h2>
