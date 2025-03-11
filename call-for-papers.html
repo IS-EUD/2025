@@ -86,6 +86,7 @@ title: IS-EUD 2025 Call for Papers
                 <p>Regular and Short papers submission:</p>
                 <ul>
                     {% assign sorted_dates = site.data.dates | sort: "date" %}
+                    {% assign today_date = 'now' | date: '%s' %}
                     {% for date in sorted_dates %}
                     {% if date.description contains "Regular and short papers " %}
                     <li>
@@ -96,6 +97,8 @@ title: IS-EUD 2025 Call for Papers
                         {% else %}
                         <span>{{ date.date | date: "%-d %B %Y"}}</span>
                         {% endif %}
+                        {% assign deadline = date.extension | default: date.date | date: '%s' %}
+                        {% if today_date > deadline %}(passed){% endif %}
                     </li>
                     {% endif %}
                     {% endfor %}
@@ -143,6 +146,8 @@ title: IS-EUD 2025 Call for Papers
                         {% else %}
                         <span>{{ date.date | date: "%-d %B %Y"}}</span>
                         {% endif %}
+                        {% assign deadline = date.extension | default: date.date | date: '%s' %}
+                        {% if today_date > deadline %}(passed){% endif %}
                     </li>
                     {% endif %}
                     {% endfor %}
@@ -161,6 +166,8 @@ title: IS-EUD 2025 Call for Papers
                         {% else %}
                         <span>{{ date.date | date: "%-d %B %Y"}}</span>
                         {% endif %}
+                        {% assign deadline = date.extension | default: date.date | date: '%s' %}
+                        {% if today_date > deadline %}(passed){% endif %}
                     </li>
                     {% endif %}
                     {% endfor %}
@@ -216,6 +223,8 @@ title: IS-EUD 2025 Call for Papers
                         {% else %}
                         <span>{{ date.date | date: "%-d %B %Y"}}</span>
                         {% endif %}
+                        {% assign deadline = date.extension | default: date.date | date: '%s' %}
+                        {% if today_date > deadline %}(passed){% endif %}
                     </li>
                     {% endif %}
                     {% endfor %}
@@ -265,6 +274,8 @@ title: IS-EUD 2025 Call for Papers
                         {% else %}
                         <span>{{ date.date | date: "%-d %B %Y"}}</span>
                         {% endif %}
+                        {% assign deadline = date.extension | default: date.date | date: '%s' %}
+                        {% if today_date > deadline %}(passed){% endif %}
                     </li>
                     {% endif %}
                     {% endfor %}
@@ -283,6 +294,8 @@ title: IS-EUD 2025 Call for Papers
                         {% else %}
                         <span>{{ date.date | date: "%-d %B %Y"}}</span>
                         {% endif %}
+                        {% assign deadline = date.extension | default: date.date | date: '%s' %}
+                        {% if today_date > deadline %}(passed){% endif %}
                     </li>
                     {% endif %}
                     {% endfor %}
