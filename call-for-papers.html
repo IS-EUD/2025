@@ -280,26 +280,6 @@ title: IS-EUD 2025 Call for Papers
                     {% endif %}
                     {% endfor %}
                 </ul>
-                <p>Submissions to accepted workshops:</p>
-                <ul>
-                    {% assign sorted_dates = site.data.dates | sort: "date" %}
-                    {% for date in sorted_dates %}
-                    {% if date.description contains "Workshop submission" %}
-                    <li>
-                        {{ date.description | remove_first: 'Workshop submission ' | replace_first: "(general
-                        deadline)", "Submission" | capitalize }}:
-                        {% if date.extension %}
-                        <span class="text-decoration-line-through">{{ date.date | date: "%-d %B %Y"}}</span>
-                        <span>{{ date.extension | date: "%-d %B %Y"}}</span>
-                        {% else %}
-                        <span>{{ date.date | date: "%-d %B %Y"}}</span>
-                        {% endif %}
-                        {% assign deadline = date.extension | default: date.date | date: '%s' %}
-                        {% if today_date > deadline %}(passed){% endif %}
-                    </li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
                 <ul class="list-inline">
                     <li class="list-inline-item">
                         <a href="https://equinocs.springernature.com/service/IS-EUD_2025" class="btn btn-main-md"
