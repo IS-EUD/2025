@@ -1,0 +1,47 @@
+---
+layout: page
+title: Keynote Speakers
+---
+
+<section class="about py-0">
+	<div class="container">
+		{% assign sorted_keynotes = site.data.keynotes
+			| sort: 'date' %}
+		{% for keynote in sorted_keynotes %}
+			<div class="row">
+				<div class="col-lg-4 col-md-6 align-self-center">
+					<div class="image-block bg-about ratio ratio-1x1">
+						<img
+							class="img-fluid object-fit-cover"
+							src="{% link {{ keynote.speaker.photo |  default: 'images/empty-avatar.jpeg' }} %}"
+							alt="A photo of {{ keynote.speaker.name }} {{ keynote.speaker.surname }}">
+					</div>
+				</div>
+				<div class="col-lg-8 col-md-6 align-self-center">
+					<div class="content-block">
+						<h2 id="{{ keynote.speaker.surname | slugify }}">
+							{{ keynote.speaker.name }}
+							<span class="alternate">
+								{{ keynote.speaker.surname }}
+							</span>
+						</h2>
+						<div class="description-one">
+							<h4>
+								{{ keynote.title | default: 'To be announced' }}
+							</h4>
+							<p>
+								{{ keynote.abstract
+									| default: 'More details on this keynote will be announced shortly. Stay tuned!' }}
+							</p>
+						</div>
+						<div class="description-two">
+							<p>
+								{{ keynote.speaker.bio }}
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</section>

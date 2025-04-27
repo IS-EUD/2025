@@ -2,62 +2,73 @@
 =            Navigation Section            =
 =========================================-->
 <nav class="navbar main-nav border-less fixed-top navbar-expand-lg p-0">
-  <div class="container p-0">
-    <!-- logo -->
-    <a class="navbar-brand pr-2" href="{{ site.url | absolute_url }}">
-      <img height="40" src="{% link images/logo.svg %}" alt="IS-EUD logo">
-      <br>
-      <small class="text-secondary" style="font-size: .85rem;">16-18 June 2025, Munich (Germany)</small>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="fa fa-bars"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item {% if page.path == 'index.markdown' %}active{% endif %}">
-          <a class="nav-link" href="{{ site.url | absolute_url }}">Home
-          </a>
-          <!-- Dropdown list -->
-        </li>
-        <li class="nav-item {% if page.path == 'call-for-papers.html' %}active{% endif %}">
-          <a class="nav-link" href="{% link call-for-papers.html %}">Call for Papers
-          </a>
-          <!-- Dropdown list -->
-        </li>
-        <li class="nav-item {% if page.path == 'workshops.html' %}active{% endif %}">
-          <a class="nav-link" href="{% link workshops.html %}">
-            Workshops
-          </a>
-        </li>
-        <li class="nav-item {% if page.path == 'registration.html' %}active{% endif %}">
-          <a class="nav-link" href="{% link registration.html %}">
-            Registration
-          </a>
-        </li>
-        <li class="nav-item dropdown {% if page.path == 'organizers.html' %}active{% endif %}">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Committees
-          </a>
-          <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="{% link organizers.html %}">Organizing Committee</a></li>
-            <li><a class="dropdown-item" href="{% link pc.html %}">Program Committee</a></li>
-            <li><a class="dropdown-item" href="{% link steering-committee.html %}">Steering Committee</a></li>
-          </ul>
-        </li>
-        <li class="nav-item {% if page.path == 'venue.html' %}active{% endif %}">
-          <a class="nav-link" href="{% link venue.html %}">
-            Venue
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://iseud.net/index.php?page=previous-events" target="_blank" rel="noopener noreferrer">
-            Past Events
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
+	<div class="container p-0">
+		<!-- logo -->
+		<a class="navbar-brand pr-2" href="{{ site.url | absolute_url }}">
+			<img height="40" src="{% link images/logo.svg %}" alt="IS-EUD logo">
+			<br>
+			<small class="text-secondary" style="font-size: .85rem;">16-18 June 2025, Munich (Germany)</small>
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="fa fa-bars"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav mx-auto">
+				<li class="nav-item {% if page.path == 'index.markdown' %}active{% endif %}">
+					<a class="nav-link" href="{{ site.url | absolute_url }}">Home
+					</a>
+					<!-- Dropdown list -->
+				</li>
+				<li class="nav-item {% if page.path == 'call-for-papers.html' %}active{% endif %}">
+					<a class="nav-link" href="{% link call-for-papers.html %}">Call for Papers
+					</a>
+					<!-- Dropdown list -->
+				</li>
+				<li
+					class="nav-item dropdown {% if page.path == 'program.html' || page.path == 'workshops.html' %}active{% endif %}">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+						aria-expanded="false">
+						Program
+					</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item {% if page.path == 'keynotes.html' %}active{% endif %}"
+								href="{% link keynotes.html %}">Keynote Speakers</a></li>
+						<li><a class="dropdown-item {% if page.path == 'workshops.html' %}active{% endif %}"
+								href="{% link workshops.html %}">Workshops</a></li>
+					</ul>
+				</li>
+				<li class="nav-item {% if page.path == 'registration.html' %}active{% endif %}">
+					<a class="nav-link" href="{% link registration.html %}">
+						Registration
+					</a>
+				</li>
+				<li class="nav-item dropdown {% if page.path == 'organizers.html' %}active{% endif %}">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+						aria-expanded="false">
+						Committees
+					</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="{% link organizers.html %}">Organizing Committee</a></li>
+						<li><a class="dropdown-item" href="{% link pc.html %}">Program Committee</a></li>
+						<li><a class="dropdown-item" href="{% link steering-committee.html %}">Steering Committee</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item {% if page.path == 'venue.html' %}active{% endif %}">
+					<a class="nav-link" href="{% link venue.html %}">
+						Venue
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="https://iseud.net/index.php?page=previous-events" target="_blank"
+						rel="noopener noreferrer">
+						Past Events
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
 </nav>
 
 <!--====  End of Navigation Section  ====-->

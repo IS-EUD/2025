@@ -1,0 +1,20 @@
+- title: "Efficiency and Creativity: The Myth of Natural Language Interaction"
+  speaker:
+    name: Antonella
+    surname: De Angeli
+    affiliation: "Faculty of Engineering, Free University of Bozen-Bolzano"
+    photo: "/images/speakers/deangeli.jpg"
+    bio: >-
+      Antonella De Angeli (PhD Experimental Psychology, University of Trieste) is Professor of Human-Computer Interaction at the Faculty of Engineering of the Free University of Bozen-Bolzano. Her research is established in the field of Human-Computer Interaction, where she promotes a theory-led and empirically grounded methodology to investigate cognitive and social consequences of technology on humans. This work has developed across disciplines and countries. Notable institutions include the University of Trieste, Fondazione Bruno Kesler, the Oregon Graduate Institute, NCR Ltd., and the Universities of Manchester, Trento, and Lincoln. She first approached End-User Development in 2007 as the principal investigator of the EC-FP7 project ServfFace for the University of Manchester). She later developed her participatory vision on how to give end-users a voice in the design of their technological life in several national and international projects, including Smart Campus and the Horizon 2020 Pie-News project which she coordinated.
+  date: 2025-06-18
+  abstract: >-
+    Speed is the distinctive feature of Generative Artificial Intelligence (Gen AI), and creativity is the distinctive feature of human intelligence—a combination of fast and slow thinking. End-User Development (EUD) is the extreme interface between humans and machines. It advances efficient and creative solutions to personal needs. My presentation addresses the following question: “How does the machine speed affect creative EUD?”. I elaborate an answer based on the research with artists we carry out at the Human Technology Lab of the Free University of Bozen-Bolzano. This context naturally brings forward a critical reading of artificial creativity and its impact on users and software. Artists are problem-makers, developers are problem-solvers. The problems exposed by the artists highlighted three main themes related to agency, conflict and ideology. Now it is the responsibility of the EUD community to solve them.
+- title: null
+  speaker:
+    name: Enkelejda
+    surname: Kasneci
+    affiliation: null
+    image: null
+    bio: null
+  date: 2025-06-17
+  abstract: null
