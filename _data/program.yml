@@ -1,0 +1,128 @@
+day1: null
+day2:
+- title: Welcome and Introduction
+  type: special
+  from: "09:00"
+  to: "09:30"
+- title: null
+  type: keynote
+  id: kasneci
+  speaker:
+    name: "Enkelejda Kasneci"
+    affiliation: "Faculty of Engineering, Free University of Bozen-Bolzano"
+    image: "/images/speakers/deangeli.jpg"
+    bio: >-
+      Antonella De Angeli (PhD Experimental Psychology, University of Trieste) is Professor of Human-Computer Interaction at the Faculty of Engineering of the Free University of Bozen-Bolzano. Her research is established in the field of Human-Computer Interaction, where she promotes a theory-led and empirically grounded methodology to investigate cognitive and social consequences of technology on humans. This work has developed across disciplines and countries. Notable institutions include the University of Trieste, Fondazione Bruno Kesler, the Oregon Graduate Institute, NCR Ltd., and the Universities of Manchester, Trento, and Lincoln. She first approached End-User Development in 2007 as the principal investigator of the EC-FP7 project ServfFace for the University of Manchester). She later developed her participatory vision on how to give end-users a voice in the design of their technological life in several national and international projects, including Smart Campus and the Horizon 2020 Pie-News project which she coordinated.
+  abstract: >-
+    Speed is the distinctive feature of Generative Artificial Intelligence (Gen AI), and creativity is the distinctive feature of human intelligence—a combination of fast and slow thinking. End-User Development (EUD) is the extreme interface between humans and machines. It advances efficient and creative solutions to personal needs. My presentation addresses the following question: “How does the machine speed affect creative EUD?”. I elaborate an answer based on the research with artists we carry out at the Human Technology Lab of the Free University of Bozen-Bolzano. This context naturally brings forward a critical reading of artificial creativity and its impact on users and software. Artists are problem-makers, developers are problem-solvers. The problems exposed by the artists highlighted three main themes related to agency, conflict and ideology. Now it is the responsibility of the EUD community to solve them.
+  from: "09:30"
+  to: "10:30"
+- title: Coffee Break
+  type: break
+  from: "15:00"
+  to: "15:30"
+- title: "Session 1: Automation, Sustainability, and Smart Environments"
+  type: session
+  from: "11:00"
+  to: "13:00"
+  session:
+  - authors: Barricelli, Fogli, Gallo, Guizzardi, Maenza, Mattioli, Paternò
+    title: "An EUD Approach to Creating Feasible and Energy-saving Automations for Smart Homes"
+  - authors: Cimino, Deufemia
+    title: "End-User Customization of Trigger-Action Rules through Fine-Tuned LLMs"
+  - authors: Maenza, Mattioli, Paternò
+    title: "Explaining Problems in Daily Automations with ExplainTAP"
+  - authors: Carcangiu, Manca, Mereu, Santoro, Simeoli, Spano
+    title: "Conversational Rule Creation in XR. User's Strategies in VR and AR Automation"
+  - authors: Caslini, Gianotti, Garzotto
+    title: "From User Needs to Smart Ecosystems through LLMs: the Smartifier Case Study"
+  - authors: Schenkenfelder, Zefferer, Salomon, Winterer
+    title: "Assembly Workers as PLC Programmers: What End Users Need to Understand about Low-Code Development Platforms"
+- title: Lunch
+  type: break
+  from: "13:00"
+  to: "14:00"
+- title: "Session 2: Democratizing AI and Programming"
+  type: session
+  from: "14:00"
+  to: "15:40"
+  session:
+  - authors: Versino, Turchi, Malizia, Riva
+    title: "Fostering Novice Collaboration in ML-Based System Design Through Visual Languages and Touch Interfaces"
+  - authors: Silahli, De la Rosa Gutierrez, Rocha Silva
+    title: "Visual and Textual Language Synchronization for End-User Programming Environments"
+  - authors: Della Greca, Montero, Amaro, Aedo, Diaz, Onorati
+    title: "OMNI: an EUD tool for Ontological Multisensory Navigation Interface"
+  - authors: Esposito, Calvano, Greco, Lanzilotti, Piccinno, Curci
+    title: "Explanation-Driven Interventions for Artificial Intelligence Model Customization: Empowering End-Users to Tailor Black-Box AI in Rhinocytology"
+  - authors: Calo, De Russis
+    title: "Evaluating Visual Prompting Modalities for Generative AI-Assisted UI Design"
+- title: Coffee Break
+  type: break
+  from: "15:40"
+  to: "16:00"
+- title: Demos, Work in Progress & DC
+  type: session
+  from: "16:00"
+  to: "17:30"
+
+
+day3:
+- title: "Efficiency and Creativity: The Myth of Natural Language Interaction"
+  type: keynote
+  id: deangeli
+  speaker:
+    name: "Antonella De Angeli"
+    affiliation: "Faculty of Engineering, Free University of Bozen-Bolzano"
+    image: "/images/speakers/deangeli.jpg"
+    bio: >-
+      Antonella De Angeli (PhD Experimental Psychology, University of Trieste) is Professor of Human-Computer Interaction at the Faculty of Engineering of the Free University of Bozen-Bolzano. Her research is established in the field of Human-Computer Interaction, where she promotes a theory-led and empirically grounded methodology to investigate cognitive and social consequences of technology on humans. This work has developed across disciplines and countries. Notable institutions include the University of Trieste, Fondazione Bruno Kesler, the Oregon Graduate Institute, NCR Ltd., and the Universities of Manchester, Trento, and Lincoln. She first approached End-User Development in 2007 as the principal investigator of the EC-FP7 project ServfFace for the University of Manchester). She later developed her participatory vision on how to give end-users a voice in the design of their technological life in several national and international projects, including Smart Campus and the Horizon 2020 Pie-News project which she coordinated.
+  abstract: >-
+    Speed is the distinctive feature of Generative Artificial Intelligence (Gen AI), and creativity is the distinctive feature of human intelligence—a combination of fast and slow thinking. End-User Development (EUD) is the extreme interface between humans and machines. It advances efficient and creative solutions to personal needs. My presentation addresses the following question: “How does the machine speed affect creative EUD?”. I elaborate an answer based on the research with artists we carry out at the Human Technology Lab of the Free University of Bozen-Bolzano. This context naturally brings forward a critical reading of artificial creativity and its impact on users and software. Artists are problem-makers, developers are problem-solvers. The problems exposed by the artists highlighted three main themes related to agency, conflict and ideology. Now it is the responsibility of the EUD community to solve them.
+  from: "09:30"
+  to: "10:30"
+- title: Coffee Break
+  type: break
+  from: "10:30"
+  to: "11:00"
+
+- title: "Session 3: AI for End-User Empowerment: Personalization and Wellbeing"
+  type: session
+  from: "11:00"
+  to: "13:00"
+  session:
+  - authors: Krings, Bohn, Sauter, Ludwig
+    title: "Beyond Usability: Introducing Wellbeing-Driven End-User Development Design"
+  - authors: Valtolina, Pugliese
+    title: "AI-Assisted Cognitive Support for Caregivers: A RAG and EUD Framework for Geriatric Care"
+  - authors: Purohit, Monge Roffarello
+    title: "From Digital Self-Control Apps to iOS Shortcuts: Enabling Privacy-Centric Wellbeing Research Without Code"
+  - authors: Monge Roffarello, De Russis
+    title: "Empowering End Users to Design for Their Digital Self-Control"
+  - authors: Breve, Buono, Caruccio, Cau, Cimino, Desolda, Deufemia, Lanzilotti, Spano, Tucci
+    title: "Leveraging EUD and Generative AI for Ethical Phishing Campaigns"
+  - authors: Vaiani, Chessa
+    title: "Classifying User Motivation in Interactions"
+
+- title: Lunch
+  type: break
+  from: "13:00"
+  to: "14:00"
+
+- title: "Session 4: EUD Principles, Methodologies, and Participatory Cultures"
+  type: session
+  from: "14:00"
+  to: "15:10"
+  session:
+  - authors: Fischer
+    title: "Mindsets, Cultures, and Technologies in Support of End-User Development"
+  - authors: Mannari, Turchi, Frosali, Bacco, Ferrari, Conati, Malizia
+    title: "Assessing Computational Thinking Skills through Artefacts: the Case of ModeLLer"
+  - authors: Cham, Kefalidou
+    title: "Scenario-Based Design Tools: End-User Reflections to Requirements"
+  - authors: Aunsa AD, Barletta, Buono, Faisal, Piccinno, Saeed, Provenzano
+    title: "Defining Classes and Semantic Relationships from User Scenarios through a Heuristic Approach"
+- title: Closing
+  type: special
+  from: "15:10"
+  to: "15:30"

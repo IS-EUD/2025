@@ -1,0 +1,73 @@
+{% if include.entry.type == 'keynote' %}
+	{% assign entry_class = 'bg-primary' %}
+	{% assign text_color = 'text-white' %}
+{% elsif include.entry.type == 'break' %}
+	{% assign entry_class = 'bg-secondary' %}
+	{% assign text_color = 'text-white' %}
+{% else %}
+	{% assign entry_class = '' %}
+	{% assign text_color = '' %}
+{% endif %}
+
+
+<li class="schedule-details">
+	<div class="{{ entry_class }} block position-relative">
+		<!-- time -->
+		<div class="time my-2 align-top">
+			<i class="fa fa-clock-o {{ text_color }}"></i>
+			<span class="time {{ text_color }}">
+				{{ include.entry.from }}
+			</span>
+		</div>
+		<!-- Speaker -->
+		<div class="event" style="width: 79%;">
+			{% if include.entry.id && include.entry.type == "keynote" %}
+				<a href="{% link keynotes.html %}#{{ include.entry.id }}" class="stretched-link text-decoration-none">
+			{% endif %}
+			<h3 class="h5 {{ text_color }}">
+				{% if include.entry.type == "keynote" %}
+					Keynote: {{ include.entry.speaker.name }}
+				{% else %}
+					{{ include.entry.title }}
+				{% endif %}
+			</h3>
+			{% if include.entry.id && include.entry.type == "keynote" %}
+				</a>
+			{% endif %}
+			<p class="{{ text_color }}">
+				{% if include.entry.type == "keynote" %}
+					{{ include.entry.title
+						| default: 'More keynote details to be announced' }}
+				{% else %}
+					{{ include.entry.speaker.name }}
+				{% endif %}
+			</p>
+		</div>
+	</div>
+</li>
+{% if include.entry.type == "session" %}
+	{% for paper in include.entry.session %}
+		<li class="schedule-details">
+			<div class="block">
+				<!-- time -->
+				<div class="time">
+					<!-- <i class="fa fa-clock-o"></i> -->
+					<span class="time">
+						{{ paper.from }}
+					</span>
+				<!-- <br><span class="badge badge-secondary badge-pill">Regular</span>
+				-->
+				</div>
+				<!-- Speaker -->
+				<div class="event" style="width: 79%;">
+					<h4 class="h6 {{ text_color }}">
+						{{ paper.title }}
+					</h4>
+					<p>
+						{{ paper.authors }}
+					</p>
+				</div>
+			</div>
+		</li>
+	{% endfor %}
+{% endif %}

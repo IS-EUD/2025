@@ -32,6 +32,8 @@
 						Program
 					</a>
 					<ul class="dropdown-menu">
+						<li><a class="dropdown-item {% if page.path == 'program.html' %}active{% endif %}"
+								href="{% link program.html %}">Schedule</a></li>
 						<li><a class="dropdown-item {% if page.path == 'keynotes.html' %}active{% endif %}"
 								href="{% link keynotes.html %}">Keynote Speakers</a></li>
 						<li><a class="dropdown-item {% if page.path == 'workshops.html' %}active{% endif %}"

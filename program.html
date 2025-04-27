@@ -1,0 +1,109 @@
+---
+layout: page
+title: IS-EUD 2025 Schedule
+---
+<section class="schedule">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="schedule-tab">
+					<ul class="nav nav-pills text-center">
+						<li class="nav-item">
+							<a
+								class="nav-link active"
+								href="#jun16"
+								data-toggle="pill">
+								Day-01
+								<span>June 16, 2025
+								</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="#jun17"
+								data-toggle="pill">
+								Day-02
+								<span>June 17, 2025
+								</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="#jun18"
+								data-toggle="pill">
+								Day-03
+								<span>June 18, 2025
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="schedule-contents bg-schedule">
+					<div class="tab-content" id="pills-tabContent">
+						<div class="tab-pane fade schedule-item active show" id="jun16">
+							<ul class="m-0 p-0">
+								<!-- Schedule Details -->
+								<li class="schedule-details">
+									<div class="block">
+										<h2 class="h3">Workshops
+										</h2>
+									</div>
+								</li>
+								{% for entry in site.data.program.day1 %}
+									{% include program-entry.html entry=entry %}
+								{% else %}
+									<li class="schedule-details">
+										<div class="block">
+											<h3 class="h6">More details to be announced
+											</h3>
+										</div>
+									</li>
+								{% endfor %}
+							</ul>
+						</div>
+						<div class="tab-pane fade schedule-item" id="jun17">
+							<!-- Headings -->
+							<ul class="m-0 p-0">
+								<li class="schedule-details">
+									<div class="block">
+										<h2>Main Conference
+										</h2>
+									</div>
+								</li>
+								<!-- Schedule Details -->
+								{% for entry in site.data.program.day2 %}
+									{% include program-entry.html entry=entry %}
+								{% endfor %}
+							</ul>
+						</div>
+						<div class="tab-pane fade schedule-item" id="jun18">
+							<!-- Headings -->
+							<ul class="m-0 p-0">
+								<li class="schedule-details">
+									<div class="block">
+										<h2>Main Conference
+										</h2>
+									</div>
+								</li>
+
+								{% for entry in site.data.program.day3 %}
+									{% include program-entry.html entry=entry %}
+								{% endfor %}
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			{%  comment  %}
+				<div class="download-button text-center">
+				<a href="#" class="btn btn-main-md">Download Schedule
+				</a>
+				</div>
+			{% endcomment %}
+
+			</div>
+		</div>
+	</div>
+</section>
