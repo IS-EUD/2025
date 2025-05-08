@@ -38,6 +38,9 @@
 				{% if include.entry.type == "keynote" %}
 					{{ include.entry.title
 						| default: 'More keynote details to be announced' }}
+				{% elsif include.entry.type == 'session'		
+					or include.entry.type == 'special' %}
+					{{ include.entry.details | markdownify }}
 				{% else %}
 					{{ include.entry.speaker.name }}
 				{% endif %}

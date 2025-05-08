@@ -1,4 +1,16 @@
-day1: null
+day1:
+- title: Workshops (in parallel)
+  type: session
+  from: "09:00"
+  to: "17:00" 
+  details: >-
+    The workshops are organized in parallel. The details of the workshops will be available on the website as soon as possible. In the meantime, you can find the list of workshops here: <http://iseud2025.ubicomp.net/workshops.html>.
+- title: Lab tour at LMU und Reception
+  from: "19:00"
+  to: "21:00"
+  type: special
+  details: >-
+    Location: [Frauenlobstr. 7A, 80337 Munich](https://maps.app.goo.gl/UVL6ZFumQH3JpVXU8){:target="_blank"}
 day2:
 - title: Welcome and Introduction
   type: special
@@ -61,10 +73,20 @@ day2:
   type: break
   from: "15:40"
   to: "16:00"
-- title: Demos, Work in Progress & DC
+- title: Demos and Work in Progress
   type: session
   from: "16:00"
+  to: "16:45"
+- title: Doctoral Consortium
+  type: session
+  from: "16:45"
   to: "17:30"
+- title: Dinner and Social Event
+  type: special
+  from: "19:00"
+  to: "22:00"
+  details: >-
+    More details will be announced soon.
 
 
 day3:
