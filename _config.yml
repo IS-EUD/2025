@@ -36,6 +36,10 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-email-protect
+  - jekyll-toc
+
+toc:
+  list_class: date-list
 
 # Exclude from processing.
 # The following items will not be processed, by default.

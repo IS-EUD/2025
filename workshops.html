@@ -1,14 +1,15 @@
 ---
-layout: page
+layout: basic-page
 title: IS-EUD 2025 Accepted Workshops
 ---
 
 {% assign sorted_workshops = site.data.workshops | sort: 'acronym' %}
 
+<div class="container py-5">
 <div class="row">
     <div class="col-lg-3 col-md-10 summary mx-auto p-relative">
         <article class="rounded border p-4 shadow sticky-top" style="margin-bottom: 30px; top: 5rem;">
-            <h5>Topics &amp; Tracks</h5>
+            <h5>Accepted Workshops</h5>
             <ul class="date-list">
                 {% for workshop in sorted_workshops %}
                 <li><a href="#{{ workshop.acronym | slugify }}">{{ workshop.acronym }}</a></li>
@@ -56,4 +57,5 @@ title: IS-EUD 2025 Accepted Workshops
         </article>
         {% endfor %}
     </div>
+</div>
 </div>

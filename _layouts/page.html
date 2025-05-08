@@ -3,5 +3,32 @@ layout: basic-page
 ---
 
 <div class="container py-5">
-    {{ content }}
-</div>
+    {% if page.toc %}
+    <div class="row">
+        <div class="col-lg-3 col-md-10 summary mx-auto p-relative">
+            <article class="rounded border p-4 shadow sticky-top" style="margin-bottom: 30px; top: 5rem;">
+                <h5>{{ page.toc_title }}</h5>
+                <ul class="date-list">
+                    {{ content | toc_only }}
+                </ul>
+                <!--
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="https://equinocs.springernature.com/service/IS-EUD_2025" class="btn btn-main-md"
+                        target="_blank">Submit a Paper</a>
+                </li>
+            </ul>
+	    -->
+            </article>
+        </div>
+        <div class="col">
+            {{ content | inject_anchors }}
+        </div>
+        {% else %}
+        <div class="row justify-content-center">
+            <div class="col col-md-9">
+                {{ content }}
+            </div>
+        </div>
+        {% endif %}
+    </div>

@@ -1,19 +1,79 @@
 ---
 layout: page
-title: Venue
+toc: true
+toc_title: Attending Information
+title: Venue and Travel Informations
 ---
 
-<div class="row justify-content-center">
-    <div class="col col-md-9">
-        <article class="mb-5 shadow p-4 rounded border table-responsive">
-            <!-- <h3 id="program-committee">Program Committee</h3> -->
-             <img src="{% link images/venue/garden.jpg %}" alt="A picture of the venue" class="img-responsive w-100 mb-3">
-            <p>The venue is in the center of Munich at 10 minutes walk from München
-            Hbf (the main railway station) at Mathildenstraße 4, 80336 München
-            (<a href="https://ehv-muenchen.de/veranstaltungszentrum/"
-            target="_blank">https://ehv-muenchen.de/veranstaltungszentrum/</a>)
-            </p>
-            <p>More information coming soon...</p>
-        </article>
-    </div>
-</div>
+<article>
+	<section class="mb-5 shadow p-4 rounded border">
+		<h3 id="conference-venue">Conference Venue
+		</h3>
+		<img
+			src="{% link images/venue/garden.jpg %}"
+			alt="A picture of the venue"
+			class="img-responsive w-100 mb-3">
+		<p>The venue is in the center of Munich at 10 minutes walk from München Hbf (the
+			main railway station) at Mathildenstraße 4, 80336 München (
+			<a href="https://ehv-muenchen.de/veranstaltungszentrum/" target="_blank">https://ehv-muenchen.de/veranstaltungszentrum/
+			</a>
+			).
+		</p>
+		<a
+			href="https://maps.app.goo.gl/kDYkhPSzCTYmBRFz8"
+			target="_blank"
+			class="btn btn-main-md">Find
+																																																				in Google Maps
+		</a>
+	</section>
+	<section class="mb-5 shadow p-4 rounded border">
+		<h3 id="lab-tour">Lab Tour and Reception
+		</h3>
+		<p>The lab tour and reception on Monday evening is at Frauenlobstr. 7A, 80337
+			Munich on the 3rd floor. This is 10 minutes walk from the conference venue and
+			the close public transport stop is Sendlinger Tor.
+		</p>
+		<a
+			href="https://maps.app.goo.gl/UVL6ZFumQH3JpVXU8"
+			target="_blank"
+			class="btn btn-main-md">Find
+																																																				in Google Maps
+		</a>
+	</section>
+	<section class="mb-5 shadow p-4 rounded border">
+		<h3 id="public-transport">Public Transport
+		</h3>
+		<p>
+			To get around in Munich we recommend public transport
+															(
+			<a href="https://www.mvv-muenchen.de/en/" target="_blank">https://www.mvv-muenchen.de/en/
+			</a>
+			). In most cases this is the fastest option. To get to the venue by public
+			transport you can go by to:
+		</p>
+		<ul>
+			<li>Munich main railway station (München Hauptbahnhof / München Hbf) which is
+				connected by Tram, U-Bahn, S-Bahn, regional trains, and long distance trains.
+				From the station it is less than 10 minutes to walk to the venue.
+			</li>
+			<li>U-Bahn Station Sendlinger Tor is well connected to the U-Bahn network and
+				also a 10 minute walk to the venue.
+			</li>
+			<li>A further option is Karlsplatz/Stachus (served by Tram, U-Bahn, and S-Bahn)
+				which is also less than 10 minutes to walk.
+			</li>
+		</ul>
+	</section>
+	<section class="mb-5 shadow p-4 rounded border">
+		{% capture travel %}{% include_relative travelling-to-munich.md %}{% endcapture %}
+		{{ travel | markdownify }}
+	</section>
+	<section class="mb-5 shadow p-4 rounded border">
+		{% capture walking %}{% include_relative walking.md %}{% endcapture %}
+		{{ walking | markdownify }}
+	</section>
+	<section class="mb-5 shadow p-4 rounded border">
+		{% capture hotels %}{% include_relative hotels.md %}{% endcapture %}
+		{{ hotels | markdownify }}
+	</section>
+</article>
