@@ -9,21 +9,16 @@ title: Venue and Travel Informations
 	<section class="mb-5 shadow p-4 rounded border">
 		<h3 id="conference-venue">Conference Venue
 		</h3>
-		<img
-			src="{% link images/venue/garden.jpg %}"
-			alt="A picture of the venue"
-			class="img-responsive w-100 mb-3">
+		<img src="{% link images/venue/garden.jpg %}" alt="A picture of the venue" class="img-responsive w-100 mb-3">
 		<p>The venue is in the center of Munich at 10 minutes walk from München Hbf (the
 			main railway station) at Mathildenstraße 4, 80336 München (
-			<a href="https://ehv-muenchen.de/veranstaltungszentrum/" target="_blank">https://ehv-muenchen.de/veranstaltungszentrum/
+			<a href="https://ehv-muenchen.de/veranstaltungszentrum/"
+				target="_blank">https://ehv-muenchen.de/veranstaltungszentrum/
 			</a>
 			).
 		</p>
-		<a
-			href="https://maps.app.goo.gl/kDYkhPSzCTYmBRFz8"
-			target="_blank"
-			class="btn btn-main-md">Find
-																																																				in Google Maps
+		<a href="https://maps.app.goo.gl/kDYkhPSzCTYmBRFz8" target="_blank" class="btn btn-main-md">Find
+			in Google Maps
 		</a>
 	</section>
 	<section class="mb-5 shadow p-4 rounded border">
@@ -33,11 +28,8 @@ title: Venue and Travel Informations
 			Munich on the 3rd floor. This is 10 minutes walk from the conference venue and
 			the close public transport stop is Sendlinger Tor.
 		</p>
-		<a
-			href="https://maps.app.goo.gl/UVL6ZFumQH3JpVXU8"
-			target="_blank"
-			class="btn btn-main-md">Find
-																																																				in Google Maps
+		<a href="https://maps.app.goo.gl/UVL6ZFumQH3JpVXU8" target="_blank" class="btn btn-main-md">Find
+			in Google Maps
 		</a>
 	</section>
 	<section class="mb-5 shadow p-4 rounded border">
@@ -45,7 +37,7 @@ title: Venue and Travel Informations
 		</h3>
 		<p>
 			To get around in Munich we recommend public transport
-															(
+			(
 			<a href="https://www.mvv-muenchen.de/en/" target="_blank">https://www.mvv-muenchen.de/en/
 			</a>
 			). In most cases this is the fastest option. To get to the venue by public
@@ -75,5 +67,26 @@ title: Venue and Travel Informations
 	<section class="mb-5 shadow p-4 rounded border">
 		{% capture hotels %}{% include_relative hotels.md %}{% endcapture %}
 		{{ hotels | markdownify }}
+	</section>
+
+	<section class="mb-5 shadow p-4 rounded border">
+		<h3 id="social-dinner">Social Dinner</h3>
+		<figure class="text-center">
+			<img src="{% link images/augustiner-am-platzl-logo.png %}" alt="Logo of the restaurant Augustiner am Platzl"
+				class="img-responsive" style="max-width: 150px;">
+		</figure>
+
+		<p>
+			The social event on June 17th (Tuesday evening) will be at
+			<a target="_blank" href="https://www.augustiner-am-platzl.de">Augustiner am Platzl</a>,
+			located at
+			<a target="_blank" href="https://maps.app.goo.gl/UBQjqyi7VjjeJTMD8">Orlandostraße 5, 80331 München</a>.
+		</p>
+
+
+		<figure class="text-center mt-3">
+			<img src="{% link images/venue/social-dinner-2.jpg %}" alt="Interior of the restaurant Augustiner am Platzl"
+				class="img-responsive w-100">
+		</figure>
 	</section>
 </article>

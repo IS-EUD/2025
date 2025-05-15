@@ -1,0 +1,1 @@
+The social event on June 17th (Tuesday evening) will be at [Augustiner am Platzl](www.augustiner-am-platzl.de){:target="_blank"}, located at [Orlandostraße 5, 80331 München](https://maps.app.goo.gl/UBQjqyi7VjjeJTMD8){:target="_blank"}.
