@@ -31,8 +31,8 @@ day2:
   to: "10:30"
 - title: Coffee Break
   type: break
-  from: "15:00"
-  to: "15:30"
+  from: "10:30"
+  to: "11:00"
 - title: "Session 1: Automation, Sustainability, and Smart Environments"
   type: session
   from: "11:00"
