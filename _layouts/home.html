@@ -18,8 +18,9 @@ layout: base
 					<h2>{{ site.conference.name }}</h2>
 					<h6>16-18 June 2025, Munich (Germany)</h6>
 					<!-- Action Button -->
-					<a href="{% link call-for-papers.html %}" class="btn btn-primary text-white">Read the Call for
-						Papers</a>
+					<a href="{% link program.html %}" class="btn btn-primary text-white">
+						Check the Program
+					</a>
 					<a href="{% link iseud25.ics %}" class="btn btn-lg btn-outline-primary text-primary">Download
 						calendar entry</a>
 				</div>
@@ -50,30 +51,39 @@ layout: base
 							{% endcomment %}
 						</div>
 						<div class="col-lg-6 col-md-6">
+							<figure class="text-center">
+								<img src="{% link images/logo.svg %}" alt="IS-EUD 2025 logo"
+									class="img-responsive w-50">
+							</figure>
+							{% comment %}
 							<h3 class="h4">Important <span class="alternate">Dates</span></h3>
 							<ul class="date-list">
 								{% assign sorted_dates = site.data.dates | sort: "extension", "last" | sort: "date" %}
 								{% assign today_date = 'now' | date: '%s' %}
 								{% for date in sorted_dates %}
 								<li>
-								{% assign deadline = date.extension | default: date.date | date: '%s' %}
-								{% if today_date > deadline %}<del>{% endif %}
-									<span class="date {% if today_date > deadline %}text-decoration-line-through{% endif %}">
-										{% if date.extension %}
-										<del class="small">{{ date.date | date: "%-d %B %Y"}}</del><br>
-										{{ date.extension | date: "%-d %B %Y"}}:
-										{% else %}
-										{{ date.date | date: "%-d %B %Y"}}:
-										{% endif %}
-									</span>
-									{{ date.description }}
-									{% if today_date > deadline %}</del>{% endif %}
-										{% if date.extension or today_date > deadline %}
-										<span class="ms-2 badge text-white {% if today_date > deadline %}text-bg-secondary{% else %}text-bg-primary{% endif %}">{% if today_date > deadline %}Passed{% else %}Extended!{% endif %}</span>
-										{% endif %}
+									{% assign deadline = date.extension | default: date.date | date: '%s' %}
+									{% if today_date > deadline %}<del>{% endif %}
+										<span
+											class="date {% if today_date > deadline %}text-decoration-line-through{% endif %}">
+											{% if date.extension %}
+											<del class="small">{{ date.date | date: "%-d %B %Y"}}</del><br>
+											{{ date.extension | date: "%-d %B %Y"}}:
+											{% else %}
+											{{ date.date | date: "%-d %B %Y"}}:
+											{% endif %}
+										</span>
+										{{ date.description }}
+										{% if today_date > deadline %}</del>{% endif %}
+									{% if date.extension or today_date > deadline %}
+									<span
+										class="ms-2 badge text-white {% if today_date > deadline %}text-bg-secondary{% else %}text-bg-primary{% endif %}">{%
+										if today_date > deadline %}Passed{% else %}Extended!{% endif %}</span>
+									{% endif %}
 								</li>
 								{% endfor %}
 							</ul>
+							{% endcomment %}
 						</div>
 					</div>
 					<div class="description-two text-center mt-3 bg-white">
@@ -81,6 +91,46 @@ layout: base
 							the program and the results from <a target="_blank" rel="noopener noreferrer"
 								href="https://cg3hci.dmi.unica.it/iseud2023/">IS-EUD
 								2023</a>.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section about">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 align-self-center">
+				<div class="content-block">
+					<h2 class="text-center">This Year's <span class="alternate">Keynotes</span></h2>
+					{% assign sorted_keynotes = site.data.keynotes
+					| sort: 'date' %}
+					{% for keynote in sorted_keynotes %}
+					<div class="row">
+						<div class="col-lg-6 col-md-6 align-self-center description-one">
+							<h3 class="h6">{{ keynote.title }}</h3>
+							<p class="fw-bold">{{ keynote.date | date: "%d %B %Y"}}</p>
+							<p>
+								{{ keynote.abstract}}
+							</p>
+						</div>
+						<div class="col-lg-6 col-md-6 align-content-center">
+							<figure class="text-center image-block mx-auto w-50 ratio ratio-1x1">
+								<img src="{% link {{ keynote.speaker.photo }} %}" alt="IS-EUD 2025 logo"
+									class="img-fluid object-fit-cover">
+							</figure>
+							<p class="text-center mb-0">
+								By <strong>{{ keynote.speaker.name }} {{ keynote.speaker.surname }}</strong><br>
+								{{ keynote.speaker.affiliation }}
+							</p>
+						</div>
+					</div>
+					{% endfor %}
+					<div class="description-two text-center mt-3 bg-white">
+						<a href="{% link program.html %}" class="btn btn-outline-primary">
+							Check the Program
+						</a>
 					</div>
 				</div>
 			</div>
@@ -138,7 +188,8 @@ layout: base
 						</p>
 						<p>
 							<a href="{% link venue.html %}" class="btn btn-main-md">More</a>
-							<a href="https://maps.app.goo.gl/kDYkhPSzCTYmBRFz8" target="_blank" class="btn btn-main-md">Open in Google Maps</a>
+							<a href="https://maps.app.goo.gl/kDYkhPSzCTYmBRFz8" target="_blank"
+								class="btn btn-main-md">Open in Google Maps</a>
 						</p>
 					</div>
 
