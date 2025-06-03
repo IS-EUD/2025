@@ -1,4 +1,4 @@
-{% if include.entry.type == 'keynote' %}
+{% if include.entry.type == 'keynote' or include.entry.type == "special" %}
 	{% assign entry_class = 'bg-primary' %}
 	{% assign text_color = 'text-white' %}
 {% elsif include.entry.type == 'break' %}
@@ -10,17 +10,17 @@
 {% endif %}
 
 
-<li class="schedule-details">
-	<div class="{{ entry_class }} block position-relative">
+<li class="schedule-details position-relative">
+	<div class="{{ entry_class }} block row">
 		<!-- time -->
-		<div class="time my-2 align-top">
+		<div class="time my-2 align-top col-2">
 			<i class="fa fa-clock-o {{ text_color }}"></i>
 			<span class="time {{ text_color }}">
 				{{ include.entry.from }}
 			</span>
 		</div>
 		<!-- Speaker -->
-		<div class="event" style="width: 79%;">
+		<div class="event col">
 			{% if include.entry.id && include.entry.type == "keynote" %}
 				<a href="{% link keynotes.html %}#{{ include.entry.id }}" class="stretched-link text-decoration-none">
 			{% endif %}
@@ -38,9 +38,10 @@
 				{% if include.entry.type == "keynote" %}
 					{{ include.entry.title
 						| default: 'More keynote details to be announced' }}
-				{% elsif include.entry.type == 'session'		
+				{% elsif include.entry.type == 'session'
+				    or include.entry.type == "workshops"	
 					or include.entry.type == 'special' %}
-					{{ include.entry.details | markdownify }}
+					{{ include.entry.details | markdownify | remove: '<p>' | remove: '</p>' | replace: '<a', '<a class="text-white"' | default: 'More details to be announced' }}
 				{% else %}
 					{{ include.entry.speaker.name }}
 				{% endif %}
@@ -48,12 +49,12 @@
 		</div>
 	</div>
 </li>
-{% if include.entry.type == "session" %}
+{% if include.entry.type == "session" or include.entry.type == "workshops" %}
 	{% for paper in include.entry.session %}
-		<li class="schedule-details">
-			<div class="block">
+		<li class="schedule-details position-relative">
+			<div class="block row">
 				<!-- time -->
-				<div class="time">
+				<div class="time col-2 offset-1">
 					<!-- <i class="fa fa-clock-o"></i> -->
 					<span class="time">
 						{{ paper.from }}
@@ -62,14 +63,34 @@
 				-->
 				</div>
 				<!-- Speaker -->
-				<div class="event" style="width: 79%;">
+				<div class="event col">
 					<h4 class="h6 {{ text_color }}">
 						{{ paper.title }}
 					</h4>
+					{% if paper.authors %}
 					<p>
 						{{ paper.authors }}
 					</p>
+					{% endif %}
+					{% if paper.details %}
+					<p>
+						{{ paper.details | markdownify }}
+					</p>
+					{% endif %}
 				</div>
+					{% if paper.link %}
+					<div class="col-2 align-content-center position-static">
+						<a href="{{ paper.link }}" class="align-content-center stretched-link" target="_blank" rel="noopener noreferrer">
+						<small>
+							{% if include.entry.type == "session" %}
+								View Paper
+							{% else %}
+								Go to website
+							{% endif %}
+						</small>
+						</a>
+					</div>
+					{% endif %}
 			</div>
 		</li>
 	{% endfor %}

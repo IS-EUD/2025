@@ -1,10 +1,49 @@
 day1:
-- title: Workshops (in parallel)
-  type: session
+- &workshop_session
+  title: Workshops (in parallel)
+  type: workshops
   from: "09:00"
   to: "17:00" 
   details: >-
-    The workshops are organized in parallel. The details of the workshops will be available on the website as soon as possible. In the meantime, you can find the list of workshops here: <http://iseud2025.ubicomp.net/workshops.html>.
+    The workshops are organized in parallel. Refer to the individual workshop websites for more information.
+  session:
+  - fulltitle: "A²ID 2025 - 1st International Workshop on Augmented Artificial Intelligence: a Symbiotic Approach to Enhance Decision-Making"
+    title: "A²ID 2025"
+    details: "**Room:** Glaspalast"
+    link: https://a2id.di.uniba.it
+  - fulltitle: "CSE4IA 2025 - 3rd International Workshop on Cyber Security Education for Industry and Academia"
+    title: "CSE4IA 2025"
+    link: https://sites.google.com/view/cse4ia-2025
+    details: "**Room:** Seminarraum groß"
+  - fulltitle: "CoPDA 2025 - 9th International Workshop on Cultures of Participation in the Digital Age: Sustainability Perspectives and Frameworks for Making Cultures of Participation Successful"
+    link: https://copda.unimi.it/
+    title: "CoPDA 2025"
+    details: "**Room:** Bibliothek"
+  - fulltitle: "AI4EUD 2025 - Empowering the End-User — Software Development with LLMs"
+    link: https://www.hcilab.org/ai4eud-2025/
+    title: "AI4EUD 2025"
+    details: "**Room:** _To be defined_"
+- &morningbreak
+  title: Coffee Break
+  type: break
+  from: "10:30"
+  to: "11:00"
+- <<: *workshop_session
+  from: "11:00"
+- &lunch
+  title: Lunch
+  type: break
+  from: "13:00"
+  to: "14:00"
+- <<: *workshop_session
+  from: "14:00"
+- &afternoonbreak
+  title: Coffee Break
+  type: break
+  from: "15:30"
+  to: "16:00"
+- <<: *workshop_session
+  from: "16:00"
 - title: Lab tour at LMU und Reception
   from: "19:00"
   to: "21:00"
@@ -29,10 +68,7 @@ day2:
     Large language models are disrupting end-user development by empowering non-experts, particularly learners, to design their own digital tools and environments. In education, this change raises a key question: How can learners gain agency as designers of their learning ecosystems and develop tools such as personalized learning aids, collaborative platforms or AI-powered simulations? This talk explores strategies for using large language models for learner-centered end-user development, focusing on intuitive design scaffolding, transparent AI interactions, and fostering creative agency. Drawing on research in educational technology, human-computer interaction, and Generative AI, this talk presents practical examples that illustrate how learners can be empowered while addressing challenges such as digital literacy barriers, AI and algorithmic literacy, and equitable access to technology.
   from: "09:30"
   to: "10:30"
-- title: Coffee Break
-  type: break
-  from: "10:30"
-  to: "11:00"
+- *morningbreak
 - title: "Session 1: Automation, Sustainability, and Smart Environments"
   type: session
   from: "11:00"
@@ -50,10 +86,7 @@ day2:
     title: "From User Needs to Smart Ecosystems through LLMs: the Smartifier Case Study"
   - authors: Schenkenfelder, Zefferer, Salomon, Winterer
     title: "Assembly Workers as PLC Programmers: What End Users Need to Understand about Low-Code Development Platforms"
-- title: Lunch
-  type: break
-  from: "13:00"
-  to: "14:00"
+- *lunch
 - title: "Session 2: Democratizing AI and Programming"
   type: session
   from: "14:00"
@@ -69,10 +102,7 @@ day2:
     title: "Explanation-Driven Interventions for Artificial Intelligence Model Customization: Empowering End-Users to Tailor Black-Box AI in Rhinocytology"
   - authors: Calo, De Russis
     title: "Evaluating Visual Prompting Modalities for Generative AI-Assisted UI Design"
-- title: Coffee Break
-  type: break
-  from: "15:40"
-  to: "16:00"
+- *afternoonbreak
 - title: Demos and Work in Progress
   type: session
   from: "16:00"
@@ -104,10 +134,7 @@ day3:
     Speed is the distinctive feature of Generative Artificial Intelligence (Gen AI), and creativity is the distinctive feature of human intelligence—a combination of fast and slow thinking. End-User Development (EUD) is the extreme interface between humans and machines. It advances efficient and creative solutions to personal needs. My presentation addresses the following question: “How does the machine speed affect creative EUD?”. I elaborate an answer based on the research with artists we carry out at the Human Technology Lab of the Free University of Bozen-Bolzano. This context naturally brings forward a critical reading of artificial creativity and its impact on users and software. Artists are problem-makers, developers are problem-solvers. The problems exposed by the artists highlighted three main themes related to agency, conflict and ideology. Now it is the responsibility of the EUD community to solve them.
   from: "09:30"
   to: "10:30"
-- title: Coffee Break
-  type: break
-  from: "10:30"
-  to: "11:00"
+- *morningbreak
 
 - title: "Session 3: AI for End-User Empowerment: Personalization and Wellbeing"
   type: session
@@ -127,10 +154,7 @@ day3:
   - authors: Vaiani, Chessa
     title: "Classifying User Motivation in Interactions"
 
-- title: Lunch
-  type: break
-  from: "13:00"
-  to: "14:00"
+- *lunch
 
 - title: "Session 4: EUD Principles, Methodologies, and Participatory Cultures"
   type: session

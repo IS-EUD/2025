@@ -384,16 +384,16 @@
 				li{
 					list-style: none;
 					div{
-						display: inline-block;
+						// display: inline-block;
 					}
 					.time{
-						width: 20%;
-						@include tablet {
-							width: 37%;
-						}
-						@include mobile {
-							width: 48%;
-						}
+						// width: 20%;
+						// @include tablet {
+						// 	width: 37%;
+						// }
+						// @include mobile {
+						// 	width: 48%;
+						// }
 					}
 					.speaker{
 						width: 30%;
