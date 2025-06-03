@@ -44,12 +44,13 @@ day1:
   to: "16:00"
 - <<: *workshop_session
   from: "16:00"
-- title: Lab tour at LMU und Reception
+- title: Lab tour at LMU and reception
   from: "19:00"
   to: "21:00"
   type: special
   details: >-
-    Location: [Frauenlobstr. 7A, 80337 Munich](https://maps.app.goo.gl/UVL6ZFumQH3JpVXU8){:target="_blank"}
+    Location: [Frauenlobstr. 7A, 80337 Munich](https://maps.app.goo.gl/UVL6ZFumQH3JpVXU8){:target="_blank"}.
+    The laboratory tour will be followed by a reception with drinks and snacks. The laboratory is located at 10 minutes walking distance from the conference venue. You can get directions [here](https://maps.app.goo.gl/zSAJsrzfwE9MGHvj6){:target="_blank"}.
 day2:
 - title: Welcome and Introduction
   type: special
