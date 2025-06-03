@@ -111,7 +111,15 @@ day2:
   type: session
   from: "16:45"
   to: "17:30"
-- title: Dinner and Social Event
+- title: Walking together to social event
+  type: special
+  from: "18:30"
+  to: "19:00"
+  details: >-
+    *For those who are interested*, some of the participants and organizers will walk together to the social event location. If you are interested, please meet at the main entrance of the conference venue at 18:30. This is a great opportunity to continue to network and chat with other participants.
+    The social event location is about 20--25 minutes away by foot from the conference venue (get directions [here](https://maps.app.goo.gl/ahf1EdX4GENNZFKe8){:target="_blank"}).
+- &socialevent
+  title: Dinner and Social Event
   type: special
   from: "19:00"
   to: "22:00"
