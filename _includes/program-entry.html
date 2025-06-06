@@ -17,6 +17,8 @@
 			<i class="fa fa-clock-o {{ text_color }}"></i>
 			<span class="time {{ text_color }}">
 				{{ include.entry.from }}
+				&ndash;
+				{{ include.entry.to }}
 			</span>
 		</div>
 		<!-- Speaker -->
@@ -55,10 +57,14 @@
 			<div class="block row">
 				<!-- time -->
 				<div class="time col-2 offset-1">
-					<!-- <i class="fa fa-clock-o"></i> -->
+					{% if paper.from and paper.to %}
+					<i class="fa fa-clock-o"></i>
 					<span class="time">
 						{{ paper.from }}
+						&ndash;
+						{{ paper.to }}
 					</span>
+					{% endif %}
 				<!-- <br><span class="badge badge-secondary badge-pill">Regular</span>
 				-->
 				</div>

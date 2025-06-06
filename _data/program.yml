@@ -3,7 +3,7 @@ day1:
   title: Workshops (in parallel)
   type: workshops
   from: "09:00"
-  to: "17:00" 
+  to: "10:30" 
   details: >-
     The workshops are organized in parallel. Refer to the individual workshop websites for more information.
   session:
@@ -30,6 +30,7 @@ day1:
   to: "11:00"
 - <<: *workshop_session
   from: "11:00"
+  to: "13:00"
 - &lunch
   title: Lunch
   type: break
@@ -37,13 +38,15 @@ day1:
   to: "14:00"
 - <<: *workshop_session
   from: "14:00"
+  to: "15:30"
 - &afternoonbreak
   title: Coffee Break
   type: break
-  from: "15:30"
+  from: "15:40"
   to: "16:00"
 - <<: *workshop_session
   from: "16:00"
+  to: "17:30"
 - title: Lab tour at LMU and reception
   from: "19:00"
   to: "21:00"
@@ -77,16 +80,28 @@ day2:
   session:
   - authors: Barricelli, Fogli, Gallo, Guizzardi, Maenza, Mattioli, Paternò
     title: "An EUD Approach to Creating Feasible and Energy-saving Automations for Smart Homes"
+    from: "11:00"
+    to: "11:20"
   - authors: Cimino, Deufemia
     title: "End-User Customization of Trigger-Action Rules through Fine-Tuned LLMs"
+    from: "11:20"
+    to: "11:40"
   - authors: Maenza, Mattioli, Paternò
     title: "Explaining Problems in Daily Automations with ExplainTAP"
+    from: "11:40"
+    to: "12:00"
   - authors: Carcangiu, Manca, Mereu, Santoro, Simeoli, Spano
     title: "Conversational Rule Creation in XR. User's Strategies in VR and AR Automation"
+    from: "12:00"
+    to: "12:20"
   - authors: Caslini, Gianotti, Garzotto
     title: "From User Needs to Smart Ecosystems through LLMs: the Smartifier Case Study"
+    from: "12:20"
+    to: "12:40"
   - authors: Schenkenfelder, Zefferer, Salomon, Winterer
     title: "Assembly Workers as PLC Programmers: What End Users Need to Understand about Low-Code Development Platforms"
+    from: "12:40"
+    to: "13:00"
 - *lunch
 - title: "Session 2: Democratizing AI and Programming"
   type: session
@@ -95,14 +110,24 @@ day2:
   session:
   - authors: Versino, Turchi, Malizia, Riva
     title: "Fostering Novice Collaboration in ML-Based System Design Through Visual Languages and Touch Interfaces"
+    from: "14:00"
+    to: "14:20"
   - authors: Silahli, De la Rosa Gutierrez, Rocha Silva
     title: "Visual and Textual Language Synchronization for End-User Programming Environments"
+    from: "14:20"
+    to: "14:40"
   - authors: Della Greca, Montero, Amaro, Aedo, Diaz, Onorati
     title: "OMNI: an EUD tool for Ontological Multisensory Navigation Interface"
+    from: "14:40"
+    to: "15:00"
   - authors: Esposito, Calvano, Greco, Lanzilotti, Piccinno, Curci
     title: "Explanation-Driven Interventions for Artificial Intelligence Model Customization: Empowering End-Users to Tailor Black-Box AI in Rhinocytology"
+    from: "15:00"
+    to: "15:20"
   - authors: Calo, De Russis
     title: "Evaluating Visual Prompting Modalities for Generative AI-Assisted UI Design"
+    from: "15:20"
+    to: "15:40"
 - *afternoonbreak
 - title: Demos and Work in Progress
   type: session
@@ -162,16 +187,28 @@ day3:
   session:
   - authors: Krings, Bohn, Sauter, Ludwig
     title: "Beyond Usability: Introducing Wellbeing-Driven End-User Development Design"
+    from: "11:00"
+    to: "11:20"
   - authors: Valtolina, Pugliese
     title: "AI-Assisted Cognitive Support for Caregivers: A RAG and EUD Framework for Geriatric Care"
+    from: "11:20"
+    to: "11:40"
   - authors: Purohit, Monge Roffarello
     title: "From Digital Self-Control Apps to iOS Shortcuts: Enabling Privacy-Centric Wellbeing Research Without Code"
+    from: "11:40"
+    to: "12:00"
   - authors: Monge Roffarello, De Russis
     title: "Empowering End Users to Design for Their Digital Self-Control"
+    from: "12:00"
+    to: "12:20"
   - authors: Breve, Buono, Caruccio, Cau, Cimino, Desolda, Deufemia, Lanzilotti, Spano, Tucci
     title: "Leveraging EUD and Generative AI for Ethical Phishing Campaigns"
+    from: "12:20"
+    to: "12:40"
   - authors: Vaiani, Chessa
     title: "Classifying User Motivation in Interactions"
+    from: "12:40"
+    to: "13:00"
 
 - *lunch
 
@@ -182,12 +219,20 @@ day3:
   session:
   - authors: Fischer
     title: "Mindsets, Cultures, and Technologies in Support of End-User Development"
+    from: "14:00"
+    to: "14:20"
   - authors: Mannari, Turchi, Frosali, Bacco, Ferrari, Conati, Malizia
     title: "Assessing Computational Thinking Skills through Artefacts: the Case of ModeLLer"
+    from: "14:20"
+    to: "14:40"
   - authors: Cham, Kefalidou
     title: "Scenario-Based Design Tools: End-User Reflections to Requirements"
+    from: "14:40"
+    to: "15:00"
   - authors: Aunsa AD, Barletta, Buono, Faisal, Piccinno, Saeed, Provenzano
     title: "Defining Classes and Semantic Relationships from User Scenarios through a Heuristic Approach"
+    from: "15:00"
+    to: "15:20"
 - title: Closing
   type: special
   from: "15:10"
