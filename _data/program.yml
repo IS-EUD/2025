@@ -9,7 +9,7 @@ day1:
   session:
   - fulltitle: "A²ID 2025 - 1st International Workshop on Augmented Artificial Intelligence: a Symbiotic Approach to Enhance Decision-Making"
     title: "A²ID 2025"
-    details: "**Room:** Glaspalast"
+    details: "**Room:** Seminarraum klein"
     link: https://a2id.di.uniba.it
   - fulltitle: "CSE4IA 2025 - 3rd International Workshop on Cyber Security Education for Industry and Academia"
     title: "CSE4IA 2025"
@@ -22,7 +22,7 @@ day1:
   - fulltitle: "AI4EUD 2025 - Empowering the End-User — Software Development with LLMs"
     link: https://www.hcilab.org/ai4eud-2025/
     title: "AI4EUD 2025"
-    details: "**Room:** _To be defined_"
+    details: "**Room:** Mathildensaal"
 - &morningbreak
   title: Coffee Break
   type: break
