@@ -153,6 +153,15 @@ day2:
   type: session
   from: "16:55"
   to: "17:40"
+  session:
+  - authors: Jacopo Mereu (University of Cagliari)
+    title: "Using LLMs to enhance end-user development support in XR"
+    from: "16:55"
+    to: "17:15"
+  - authors: Luigi Gargioni (University of Brescia)
+    title: "Advancing End-User Development in Robotics with Large Language Models and Digital Twins"
+    from: "17:15"
+    to: "17:35"
 - title: Walking together to social event
   type: special
   from: "18:30"
