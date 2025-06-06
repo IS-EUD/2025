@@ -108,6 +108,16 @@ day2:
   type: session
   from: "16:00"
   to: "16:45"
+  session:
+  - authors: Sebastian Krois, Kevin Scharke, Enes Yigitbas, Gudrun Oevel
+    title: "A VR End-User Development Toolbox for Media Study Students - An Initial Experience Report"
+    type: WiP
+  - authors: Tommaso Turchi, Francesco Faenza, Alessio Malizia, Giacomo Bosio, Nicoletta Bruno
+    title: "Figmant — A Plugin for End-User Development of Wizard of Oz Experiments for Human-AI Interaction Design"
+    type: WiP
+  - authors: Bernhard Schenkenfelder, Raphael Zefferer, Christian Salomon, Mario Winterer
+    title: "Assembly Workers as PLC Programmers: A Low-Code Development Platform for Engine Manufacturing"
+    type: WiP
 - title: Doctoral Consortium
   type: session
   from: "16:45"
