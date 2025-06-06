@@ -43,9 +43,9 @@ day1:
   title: Coffee Break
   type: break
   from: "15:40"
-  to: "16:00"
+  to: "16:10"
 - <<: *workshop_session
-  from: "16:00"
+  from: "16:10"
   to: "17:30"
 - title: Lab tour at LMU and reception
   from: "19:00"
@@ -131,28 +131,28 @@ day2:
 - *afternoonbreak
 - title: Demos and Work in Progress
   type: session
-  from: "16:00"
-  to: "16:45"
+  from: "16:10"
+  to: "16:55"
   session:
   - authors: Sebastian Krois, Kevin Scharke, Enes Yigitbas, Gudrun Oevel
     title: "A VR End-User Development Toolbox for Media Study Students - An Initial Experience Report"
     type: WiP
-    from: "16:00"
-    to: "16:15"
+    from: "16:10"
+    to: "16:25"
   - authors: Tommaso Turchi, Francesco Faenza, Alessio Malizia, Giacomo Bosio, Nicoletta Bruno
     title: "Figmant — A Plugin for End-User Development of Wizard of Oz Experiments for Human-AI Interaction Design"
     type: WiP
-    from: "16:15"
-    to: "16:30"
+    from: "16:25"
+    to: "16:40"
   - authors: Bernhard Schenkenfelder, Raphael Zefferer, Christian Salomon, Mario Winterer
     title: "Assembly Workers as PLC Programmers: A Low-Code Development Platform for Engine Manufacturing"
     type: WiP
-    from: "16:30"
-    to: "16:45"
+    from: "16:40"
+    to: "16:55"
 - title: Doctoral Consortium
   type: session
-  from: "16:45"
-  to: "17:30"
+  from: "16:55"
+  to: "17:40"
 - title: Walking together to social event
   type: special
   from: "18:30"
@@ -241,5 +241,5 @@ day3:
     to: "15:20"
 - title: Closing
   type: special
-  from: "15:10"
-  to: "15:30"
+  from: "15:20"
+  to: "15:40"
