@@ -71,7 +71,14 @@
 				<!-- Speaker -->
 				<div class="event col">
 					<h4 class="h6 {{ text_color }}">
+						{% if paper.link %}
+							<a href="{{ paper.link }}" class="align-content-center stretched-link text-primary text-decoration-none" target="_blank" rel="noopener noreferrer">
+						{% endif %}
 						{{ paper.title }}
+						{% if paper.link %}
+							<sup><i class="text-small fa fa-external-link fa-2xs"></i></sup>
+							</a>
+						{% endif %}
 					</h4>
 					{% if paper.authors %}
 					<p>
@@ -84,19 +91,6 @@
 					</p>
 					{% endif %}
 				</div>
-					{% if paper.link %}
-					<div class="col-2 align-content-center position-static">
-						<a href="{{ paper.link }}" class="align-content-center stretched-link" target="_blank" rel="noopener noreferrer">
-						<small>
-							{% if include.entry.type == "session" %}
-								View Paper
-							{% else %}
-								Go to website
-							{% endif %}
-						</small>
-						</a>
-					</div>
-					{% endif %}
 			</div>
 		</li>
 	{% endfor %}
