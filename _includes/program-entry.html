@@ -1,4 +1,4 @@
-{% if include.entry.type == 'keynote' or include.entry.type == "special" %}
+{% if include.entry.type == 'keynote' or include.entry.type == "special" or include.entry.type == "session" %}
 	{% assign entry_class = 'bg-primary' %}
 	{% assign text_color = 'text-white' %}
 {% elsif include.entry.type == 'break' %}
@@ -70,7 +70,7 @@
 				</div>
 				<!-- Speaker -->
 				<div class="event col">
-					<h4 class="h6 {{ text_color }}">
+					<h4 class="h6">
 						{% if paper.link %}
 							<a href="{{ paper.link }}" class="align-content-center stretched-link text-primary text-decoration-none" target="_blank" rel="noopener noreferrer">
 						{% endif %}
