@@ -77,6 +77,7 @@ day2:
   type: session
   from: "11:00"
   to: "13:00"
+  chair: Giuseppe Desolda (University of Bari Aldo Moro, Italy)
   session:
   - authors: Barricelli, Fogli, Gallo, Guizzardi, Maenza, Mattioli, Paternò
     title: "An EUD Approach to Creating Feasible and Energy-saving Automations for Smart Homes"
@@ -107,6 +108,7 @@ day2:
   type: session
   from: "14:00"
   to: "15:40"
+  chair: Davide Spano (University of Cagliari, Italy)
   session:
   - authors: Versino, Turchi, Malizia, Riva
     title: "Fostering Novice Collaboration in ML-Based System Design Through Visual Languages and Touch Interfaces"
@@ -231,6 +233,7 @@ day3:
   type: session
   from: "14:00"
   to: "15:10"
+  chair: Daniela Fogli (University of Brescia, Italy)
   session:
   - authors: Fischer
     title: "Mindsets, Cultures, and Technologies in Support of End-User Development"

@@ -36,6 +36,9 @@
 			{% if include.entry.id && include.entry.type == "keynote" %}
 				</a>
 			{% endif %}
+			{% if include.entry.type == "session" and include.entry.chair %}
+				<p class="mt-0 {{ text_color }}"><strong>Chair:</strong> {{ include.entry.chair }}</p>
+			{% endif %}
 			<p class="{{ text_color }}">
 				{% if include.entry.type == "keynote" %}
 					{{ include.entry.title
