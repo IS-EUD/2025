@@ -16,7 +16,9 @@ layout: base
 					{% comment %}<div class="timer"></div>{% endcomment %}
 					<h1>{{ site.conference.acronym }}</h1>
 					<h2>{{ site.conference.name }}</h2>
-					<h6>16-18 June 2025, Munich (Germany)</h6>
+					<h6>16-18 June 2025, Munich (Germany)
+						<span class="lead d-block fs-6"><strong>Venue:</strong> Mathildenstraße 4, 80336 München, Germany</span>
+					</h6>
 					<!-- Action Button -->
 					<a href="{% link program.html %}" class="btn btn-primary text-white">
 						Conference Schedule
@@ -24,6 +26,9 @@ layout: base
 					<!-- <a href="{% link iseud25.ics %}" class="btn btn-lg btn-outline-primary text-primary">
 						Download calendar entry
 					</a> -->
+					<a href="{% link venue.html %}#conference-venue" class="btn btn-lg btn-outline-primary text-primary">
+						Navigate to the Venue
+					</a>
 					<a href="{% link proceedings.html %}" class="btn btn-lg btn-outline-primary text-primary">
 						Proceedings
 					</a>
