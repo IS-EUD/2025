@@ -83,6 +83,16 @@
       link: https://www.en.um.informatik.uni-muenchen.de/people/employees/lang/index.html
       image: /images/organizers/lang.jpg
       email: florian.lang@ifi.lmu.de
+    - name: Francesco Chiossi
+      affiliation: LMU Munich
+      link: https://francesco-chiossi-hci.com/
+      image: /images/organizers/chiossi.JPG
+      email: francesco.chiossi@ifi.lmu.de
+    - name: Kathrin Schnizer
+      affiliation: LMU Munich
+      link: https://www.medien.ifi.lmu.de/team/kathrin.schnizer/
+      image: /images/organizers/schnizer.png
+      email: kathrin.schnizer@ifi.lmu.de
 - type: Web
   people:
     - name: Andrea Esposito
