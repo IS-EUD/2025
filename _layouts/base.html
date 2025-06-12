@@ -42,14 +42,14 @@
 </head>
 
 <body class="body-wrapper">
-  {% include navigation.htm %}
-  {{ content }}
-  {% include footer.htm %}
   <!-- JAVASCRIPTS -->
   <!-- jQuey -->
   <script src="plugins/jquery/jquery.min.js"></script>
   <!-- Bootstrap 4 -->
   <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  {% include navigation.htm %}
+  {{ content }}
+  {% include footer.htm %}
   <!-- Shuffle -->
   <script src="plugins/shuffle/shuffle.min.js"></script>
   <!-- Magnific Popup -->

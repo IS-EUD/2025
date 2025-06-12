@@ -120,3 +120,15 @@ title: IS-EUD 2025 Schedule
 	</div>
 </section>
 </div>
+
+<script>
+	$(function () {
+		var hash = window.location.hash;
+		hash && $('ul.nav.nav-pills a[href="' + hash + '"]').tab('show');
+		$('ul.nav.nav-pills a').click(function (e) {
+			$(this).tab('show');
+			$('body').scrollTop();
+			window.location.hash = this.hash;
+		});
+	});
+</script>
