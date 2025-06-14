@@ -140,6 +140,7 @@ day2:
   type: session
   from: "16:10"
   to: "16:55"
+  chair: Paloma Diaz (Universidad Carlos III de Madrid, Spain)
   session:
   - authors: Sebastian Krois, Kevin Scharke, Enes Yigitbas, Gudrun Oevel
     title: "A VR End-User Development Toolbox for Media Study Students - An Initial Experience Report"
@@ -206,6 +207,7 @@ day3:
   type: session
   from: "11:00"
   to: "13:00"
+  chair: Daniel Tetteroo (Eindhoven University of Technology, Netherlands)
   session:
   - authors: Krings, Bohn, Sauter, Ludwig
     title: "Beyond Usability: Introducing Wellbeing-Driven End-User Development Design"
