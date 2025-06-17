@@ -53,13 +53,11 @@ title: IS-EUD 2025 Schedule
 				<div class="schedule-contents bg-schedule">
 					<div class="tab-content" id="pills-tabContent">
 						<div class="tab-pane fade schedule-item active show" id="jun16">
-							<ul class="m-0 p-0">
+							<ul class="m-0 p-0 container">
 								<!-- Schedule Details -->
-								<li class="schedule-details">
-									<div class="block">
+								<li class="schedule-details row bg-white px-4 py-2">
 										<h2 class="h3">Workshops
 										</h2>
-									</div>
 								</li>
 								{% for entry in site.data.program.day1 %}
 									{% include program-entry.html entry=entry %}
@@ -75,9 +73,9 @@ title: IS-EUD 2025 Schedule
 						</div>
 						<div class="tab-pane fade schedule-item" id="jun17">
 							<!-- Headings -->
-							<ul class="m-0 p-0">
-								<li class="schedule-details">
-									<div class="block">
+							<ul class="m-0 p-0 container">
+								<li class="schedule-details row bg-white px-4 py-2">
+									<div class="col-12">
 										<h2>Main Conference
 										</h2>
 										<p>Regular and Short Paper presentations: 15 minutes  for presentation + 5 minutes for questions</p>
@@ -91,13 +89,11 @@ title: IS-EUD 2025 Schedule
 						</div>
 						<div class="tab-pane fade schedule-item" id="jun18">
 							<!-- Headings -->
-							<ul class="m-0 p-0">
-								<li class="schedule-details">
-									<div class="block">
+							<ul class="m-0 p-0 container">
+								<li class="schedule-details row bg-white px-4 py-2">
 										<h2>Main Conference
 										</h2>
 										<p>Regular and Short Paper presentations: 15 minutes  for presentation + 5 minutes for questions</p>
-									</div>
 								</li>
 
 								{% for entry in site.data.program.day3 %}

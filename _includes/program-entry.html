@@ -5,15 +5,14 @@
 	{% assign entry_class = 'bg-secondary' %}
 	{% assign text_color = 'text-white' %}
 {% else %}
-	{% assign entry_class = '' %}
+	{% assign entry_class = 'bg-white' %}
 	{% assign text_color = '' %}
 {% endif %}
 
 
-<li class="schedule-details position-relative">
-	<div class="{{ entry_class }} block row">
+<li class="schedule-details position-relative row {{ entry_class }} px-4 py-2">
 		<!-- time -->
-		<div class="time my-2 align-top col-2">
+		<div class="time my-2 align-top col-12 col-md-2">
 			<i class="fa fa-clock-o {{ text_color }}"></i>
 			<span class="time {{ text_color }}">
 				{{ include.entry.from }}
@@ -52,14 +51,12 @@
 				{% endif %}
 			</p>
 		</div>
-	</div>
 </li>
 {% if include.entry.type == "session" or include.entry.type == "workshops" %}
 	{% for paper in include.entry.session %}
-		<li class="schedule-details position-relative">
-			<div class="block row">
+		<li class="schedule-details position-relative row px-4 py-2 bg-white">
 				<!-- time -->
-				<div class="time col-2 offset-1">
+				<div class="time col-12 col-md-2 offset-md-1">
 					{% if paper.from and paper.to %}
 					<i class="fa fa-clock-o"></i>
 					<span class="time">
@@ -94,7 +91,6 @@
 					</p>
 					{% endif %}
 				</div>
-			</div>
 		</li>
 	{% endfor %}
 {% endif %}
