@@ -45,7 +45,8 @@
 				{% elsif include.entry.type == 'session'
 				    or include.entry.type == "workshops"	
 					or include.entry.type == 'special' %}
-					{{ include.entry.details | markdownify | remove: '<p>' | remove: '</p>' | replace: '<a', '<a class="text-white"' | default: 'More details to be announced' }}
+{% assign venue_link = '/venue.html#lab-tour' | absolute_url %}
+					{{ include.entry.details | markdownify | remove: '<p>' | remove: '</p>' | replace: '<a', '<a class="text-white"' | replace: '!VENUE_LINK!', venue_link | default: 'More details to be announced' }}
 				{% else %}
 					{{ include.entry.speaker.name }}
 				{% endif %}

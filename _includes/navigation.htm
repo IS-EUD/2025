@@ -4,7 +4,7 @@
 <nav class="navbar main-nav border-less fixed-top navbar-expand-lg p-0">
 	<div class="container p-0">
 		<!-- logo -->
-		<a class="navbar-brand pr-2" href="{{ site.url | absolute_url }}">
+		<a class="navbar-brand pr-2" href="{{ '/' | absolute_url }}">
 			<img height="40" src="{% link images/logo.svg %}" alt="IS-EUD logo">
 			<br>
 			<small class="text-secondary" style="font-size: .85rem;">16-18 June 2025, Munich (Germany)</small>
@@ -16,7 +16,7 @@
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav mx-auto">
 				<li class="nav-item {% if page.path == 'index.markdown' %}active{% endif %}">
-					<a class="nav-link" href="{{ site.url | absolute_url }}">Home
+					<a class="nav-link" href="{{ '/' | absolute_url }}">Home
 					</a>
 					<!-- Dropdown list -->
 				</li>
